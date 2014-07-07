@@ -14,6 +14,9 @@ view an online tutorial [here](https://www.digitalocean.com/community/tutorials/
 
 #### 2. [Create a new Droplet](https://cloud.digitalocean.com/droplets/new)
 
+- Droplet Hostname
+> Pick a name for your computer. This is NOT a domain name that will be DNS resolvable.
+
 - Select Size
 > 512MB / 1 CPU<br>
 20GB SSD DISK<br>
@@ -42,10 +45,21 @@ view an online tutorial [here](https://www.digitalocean.com/community/tutorials/
 - The root password will be emailed to you.
 - You need both IP address & password to access your new server.
 
+#### 4. Accessing Your Server
+
 - Open some type of "terminal" application and log into your server using:
     - The IP address given to you
     - The password emailed to you
-
-
-
-
+- Change your root password!
+    - Run the following command (note: the dollar `$` sign just implies "command line", don't use it in the command):
+    - `$ passwd`
+    - Follow the prompts.
+- Add yourself as a user:
+    - `$ useradd your-new-username`
+    - Follow the prompts.
+- Add me as a user:
+    - `$ useradd griffin`
+    - Set my password as `WebCourse2014!`, I will change it as necessary.
+- Add 'griffin' and 'your-new-username' to `sudoers`:
+    - [Here](https://help.ubuntu.com/community/Sudoers) is a comprehensive tutorial on editing sudoers.
+    - 
