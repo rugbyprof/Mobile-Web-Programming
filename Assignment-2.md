@@ -49,7 +49,7 @@ This will cost you around $5.00 + tax for the entire month.
 
 #### 4. Accessing Your Server
 
-- Open some type of "terminal" application and log into your server using:
+- Open some type of "terminal" (like [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)) application and log into your server using:
     - The IP address given to you
     - The password emailed to you
 - Change your root password!
@@ -81,3 +81,32 @@ your-new-username 	ALL=(ALL:ALL) ALL
 # Add me:
 griffin 	        ALL=(ALL:ALL) ALL
 ```
+
+#### 5. Basic necessary packages:
+
+```bash
+# update the package repositories
+$ sudo apt-get update
+
+# actually update any out of data packages
+$ sudo apt-get upgrade
+
+# install git a distributed version control system  
+$ sudo apt-get install git
+
+# install node.js a javascript framework that includes many addons we will use
+$ sudo apt-get install node
+
+# install 
+$ sudo apt-get install npm
+```
+
+#### 6. Testing Your Server
+
+- Navigate to `/var/www/`
+- `$ cd /var/www`
+
+- If a folder called `html` exists, change into the `html` folder, otherwise stay in `www'
+
+- Install necessary packages:
+    - `sudo apt-get install node npm`   //installs node.js and npm: node package manager
