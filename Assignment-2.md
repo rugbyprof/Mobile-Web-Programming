@@ -110,5 +110,7 @@ $ sudo apt-get install npm
 
 - If a folder called `html` exists, change into the `html` folder, otherwise stay in `www'
 
-- Install necessary packages:
-    - `sudo apt-get install node npm`   //installs node.js and npm: node package manager
+- Run `$ git clone https://github.com/h5bp/mobile-boilerplate.git`
+
+- In a web browser, go to http://your.ip.address/mobile-boilerplate/
+- If you see a blank screen, then success!! 
