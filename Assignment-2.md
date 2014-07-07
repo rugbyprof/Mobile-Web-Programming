@@ -7,24 +7,25 @@ view an online tutorial [here](https://www.digitalocean.com/community/tutorials/
 #### 1. [Sign up](https://cloud.digitalocean.com/registrations/new) for Digital Ocean.
 
 #### 2. [Create a new Droplet](https://cloud.digitalocean.com/droplets/new)
-    - Select Size
+
+- Select Size
 > 512MB / 1 CPU<br>
 20GB SSD DISK<br>
 1TB TRANSFER<br>
 
-    - Select Region
+- Select Region
 > Pick the closest region to Texas.
 
-    - Select Image
+- Select Image
 > Ubuntu 14.04 x64
 
-    - Select Applications
+- Select Applications (Tab over from image)
 > LAMP on Ubuntu 14.04
 
-    - Add optional SSH Keys
+- Add optional SSH Keys
 > Skip, we will address ssh keys later.
 
-    - Settings
+- Settings
 > Leave default settings, and don't worry about backups (unless you want to pay).
     
 #### 3. Remember the ip address that is assigned to your "droplet". This is your only connection to your server.
