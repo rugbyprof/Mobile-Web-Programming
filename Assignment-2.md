@@ -57,9 +57,25 @@ view an online tutorial [here](https://www.digitalocean.com/community/tutorials/
 - Add yourself as a user:
     - `$ useradd your-new-username`
     - Follow the prompts.
+    - Stay root for now, but as soon as you add 'your-new-username' to `sudoers`, you should change to your new user:
+    - `$ su your-new-username`
 - Add me as a user:
     - `$ useradd griffin`
     - Set my password as `WebCourse2014!`, I will change it as necessary.
-- Add 'griffin' and 'your-new-username' to `sudoers`:
-    - [Here](https://help.ubuntu.com/community/Sudoers) is a comprehensive tutorial on editing sudoers.
-    - 
+- Now we need to edit the `sudoers` file. `Sudoers` is a file that allows regular users to run commands as "root" as long as an entry is placed correctly in the file. 
+- "Your-new-user" and "griffin" both need to be added:
+    - A comprehensive tutorial about suders is available [Here](https://help.ubuntu.com/community/Sudoers).
+    - Shortcut version:
+        - (As root) $ nano /etc/suders
+        - Edit sudoers and add two lines using the following example:
+
+```txt
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+
+# Add yourself:
+your-new-username 	ALL=(ALL:ALL) ALL
+
+# Add me:
+griffin 	ALL=(ALL:ALL) ALL
+```
