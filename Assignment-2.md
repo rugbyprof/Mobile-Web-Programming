@@ -73,11 +73,11 @@ This will cost you around $5.00 + tax for the entire month.
 
 ```txt
 # User privilege specification
-root	ALL=(ALL:ALL) ALL
+root	            ALL=(ALL:ALL) ALL
 
 # Add yourself:
 your-new-username 	ALL=(ALL:ALL) ALL
 
 # Add me:
-griffin 	ALL=(ALL:ALL) ALL
+griffin 	        ALL=(ALL:ALL) ALL
 ```
