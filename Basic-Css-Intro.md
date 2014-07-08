@@ -63,7 +63,9 @@ The syntax for CSS is different than that of HTML markup. Though it is not too c
 selector { property: value }
 ```
 
-The selector is the HTML element that you want to style. The property is the actual property title, and the value is the style you apply to that property.
+1. The `selector` is the HTML element that you want to style. 
+2. The `property` is the actual property title
+3. The `value` is the style you apply to that property.
 
 Each selector can have multiple properties, and each property within that selector can have independent values. The property and value are separated with a colon and contained within curly brackets. Multiple properties are separated by a semi colon. Multiple values within a property are sperated by commas, and if an individual value contains more than one word you surround it with quotation marks. As shown below. Indentation is optional, and white space doesn't matter.
 
@@ -127,4 +129,48 @@ body{
 ```
 
 -----
+
+### CSS Classes
+
+The class selector allows you to apply style to groups of similar items. Just as a class in `C++` has properties that apply to every instance of the class, so does a CSS class.
+
+Lets say I was grading papers, and I wrote my comments in html. I could could create a couple of classes that emphasize my comments.
+
+The following snippet would apply each property to every `<p>` tag, not just the ones I want to emphasisize good or bad. In fact, how do I style each `<p>` differently? 
+
+```css
+p { 
+  font-weight: bold;
+  text-decoration:underline;
+  color: #FF0000; /* Red */
+}
+```
+
+By placing the `.` before my selector, I tell the CSS wizard that I'm creating a class. And since I'm creating my own class, I can give it a distinct name. Here's one for my bad comments:
+
+```css
+.bad { 
+  font-weight: bold;
+  text-decoration:underline;
+  color: #FF0000;   /* Red  */
+}
+```
+
+I can also (obviously) create one for good comments:
+
+```css
+.good { 
+  font-weight: bold;
+  text-decoration:none;
+  color: #00FF00;    /* Green */
+}
+```
+
+To apply these styles I can do the following:
+
+```html
+<p class="bad">That was a stupid answer</p>
+```
+
+
 
