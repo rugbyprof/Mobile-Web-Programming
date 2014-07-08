@@ -1,6 +1,6 @@
 ## Applying CSS
 
-### Divsions
+### Divisions
 
 - Divisions are a block level HTML element used to define sections of an HTML file. 
 - A division can contain all the parts that make up your website.
