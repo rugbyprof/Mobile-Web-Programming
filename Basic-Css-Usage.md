@@ -138,7 +138,7 @@ padding: 10px 10px; /* 2 values */
 padding: 10px 10px 10px; /* 3 values */
 ```
 
-> If you do not declare the padding value of an element, the padding is 0 (zero).
+> If you do not declare the padding value of an element, the padding is 0 (zero).<br>
 You do not have to add px (pixels) or whatever units you use, if the value is 0 (zero).
 
 
