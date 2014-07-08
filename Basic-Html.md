@@ -14,3 +14,9 @@
 | `<link>` |	Used to link JavaScript and external CSS with the current HTML document. |
 | `<meta>` |	Defines metadata that can't be defined using another HTML element. |
 | `<style>` |	Used to write inline CSS. |
+
+### Scripting
+
+| Element |	Description |
+|---------|-------------|
+|'<script>`|	Defines either an internal script or a link to an external script. The script language is JavaScript.|
