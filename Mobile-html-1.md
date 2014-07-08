@@ -7,13 +7,13 @@
 For now, just understand that a `tag` a piece of code that acts as a label that a web browser interprets, an `element` is a complete `tag` with an opening and closing `tag`, and an `attribute` is a property value that customizes or modifies an HTML element.
 
 Example:
-- 'Element` = `<a href="blah">Blah</a>` or an "anchor"
-- `Tag` = `<a>`
-- `Attribute(s) = `href` & `style`
 
+- Element = 
 ```html
 <a href="http://wwww.google.com" style="color:blue">Google</a>
 ```
+- `Tag` = `<a>`
+- `Attribute(s) = `href` & `style`
 
 ### Mobile What?
 
