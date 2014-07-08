@@ -54,3 +54,6 @@
 |`<figure> ` |	This element has been added in HTML5	Represents a figure illustrated as part of the document. |
 |`<figcaption>` |	 This element has been added in HTML5	Represents the legend of a figure. |
 |`<div>	` |	Represents a generic container with no special meaning. |
+
+
+Source: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list
