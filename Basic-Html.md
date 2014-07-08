@@ -53,7 +53,7 @@
 |`<dd>` |		Represents the definition of the terms immediately listed before it. |
 |`<figure> ` |	This element has been added in HTML5	Represents a figure illustrated as part of the document. |
 |`<figcaption>` |	 This element has been added in HTML5	Represents the legend of a figure. |
-|**`<div>	` **|	Represents a generic container with no special meaning. |
+|**`<div>	`**|	Represents a generic container with no special meaning. |
 
 
 
@@ -87,7 +87,7 @@
 |`<bdi> ` |	This element has been added in HTML5	Represents text that must be isolated from its surrounding for bidirectional text formatting. It allows embedding a span of text with a different, or unknown, directionality. |
 |`<bdo>` |		Represents the directionality of its children, in order to explicitly override the Unicode bidirectional algorithm. |
 |**`<span>`** |		Represents text with no specific meaning. This has to be used when no other text-semantic element conveys an adequate meaning, which, in this case, is often brought by global attributes like class, lang, or dir.
-|**`<br>` **|		Represents a line break . |
+|**`<br>`**|		Represents a line break . |
 |`<wbr> ` |	This element has been added in HTML5	Represents a line break opportunity , that is a suggested point for wrapping text in order to improve readability of text split on several lines. |
 
 ### Edits
