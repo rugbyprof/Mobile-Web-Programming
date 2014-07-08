@@ -110,7 +110,6 @@ $ sudo apt-get install npm
 
 - If a folder called `html` exists, change into the `html` folder, otherwise stay in `www'
 
-- Run `$ git clone https://github.com/h5bp/mobile-boilerplate.git`
-
-- In a web browser, go to http://your.ip.address/mobile-boilerplate/
+- Run `$ git clone https://github.com/twbs/bootstrap.git
+- In a web browser, go to http://your.ip.address/bootstrap/
 - If you see a blank screen, then success!! 
