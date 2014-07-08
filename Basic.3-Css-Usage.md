@@ -486,3 +486,68 @@ Values:
 
 http://jsfiddle.net/DM88s/1/
 
+-----
+
+#### Borders
+##### Inherited: No
+
+#### Border
+You can set the color, style and width of the borders around an element in one declaration by using the border property.
+```css
+border: 1px solid #333333;
+```
+Values:
+
+- color
+- style
+- width
+Or you can set each property individually
+
+
+#### Border Color
+You can set the color of a border independently with the border-color property.
+```css
+border-color: value;
+```
+Values:
+
+- color name
+- hexadecimal number
+- RGB color code
+- transparent
+
+#### Border Style
+You can set the style of a border independently with the border-style property.
+```css
+border-style: value;
+```
+Values:
+
+- dashed
+- dotted
+- double
+- groove
+- hidden
+- none
+- outset
+- ridge
+- solid
+
+#### Border Width
+You can set the width of a border independently with the border-width property.
+```css
+border-width: value;
+```
+Values:
+
+- Length
+- Thin
+- Medium
+- Thick
+Or you can set the elements for each borders side individually
+
+
+
+
+
+
