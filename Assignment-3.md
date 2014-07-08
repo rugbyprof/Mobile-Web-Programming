@@ -1,10 +1,22 @@
 ### Assignment 3 - First Simple Web Page.
-#### Due: July 10th by 1300 hours.
+#### Due: July 11th by 1300 hours.
 
 -----
 
-#### Create a contact card.
+#### Dynamic Contact Card
 
-- Go here: http://bootsnipp.com/snippets/featured/310-user-profile-in-modal-window
-- Make necessary edits to paths
-- Add your own info
+In your `index.php` file, add the code snippet:
+
+```php
+<?php
+  if(!isset($_POST['submit'])){
+?>
+      <form name="input" action="index.php" method="post">
+      Username: <input type="text" name="user">
+      <input type="submit" name="submit" value="Create">
+      </form>
+<?php
+  exit;
+  }
+?>
+```
