@@ -268,49 +268,51 @@ There are a lot of choices for values:
 
 #### % (percent)
 
-There is quite a bit to learn about font sizes with CSS so, I am not even going to try to explain it. Actually there are already some great resources on how to size your text. (see below)
+Percent specifies the portion of the element in ... percentages. Wow. It is trickier than you think.
 
-What size text should I use in my css by Paul O’B
-Dive into accessibility – Font Sizes
-
-Font Style
+#### Font Style
 You can set the style of text in a element with the font-style property
-
-  font-style: value;
+```css
+font-style: value;
+```
 
 Possible values are
 
-normal
-itailc
-oblique
+- normal
+- itailc
+- oblique
 
-Font Variant
+#### Font Variant
+
 You can set the variant of text within an element with the font-variant property
 
+```
   font-variant: value;
+```
 
 Possible values are
 
-normal
-small-caps
+- normal
+- small-caps
 
-Font Weight
+#### Font Weight
 You can control the weight of text in an element with the font-weight property:
-
+```css
   font-weight: value;
+```
 
 Possible values are
 
-lighter
-normal
-100
-200
-300
-400
-500
-600
-700
-800
-900
-bold
-bolder
+- lighter
+- normal
+- 100
+- 200
+- 300
+- 400
+- 500
+- 600
+- 700
+- 800
+- 900
+- bold
+- bolder
