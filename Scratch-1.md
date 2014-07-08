@@ -61,3 +61,4 @@ a {
 
 - http://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/
 - http://dev.w3.org/csswg/css-device-adapt/#the-lsquouser-zoomrsquo-property
+- https://developers.google.com/webmasters/smartphone-sites/details
