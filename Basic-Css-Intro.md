@@ -171,6 +171,31 @@ To apply these styles I can do the following:
 ```html
 <p class="bad">That was a stupid answer</p>
 ```
+-----
 
+### CSS IDs
+IDs are similar to classes, except they are meant to be applied sparingly, not to large groups. Remember that a `Class` selector uses the `.` operator to identify it, similarly the `ID` selector uses the `#` operator  to identify it. I don't know why I called `.` and `#` operators? Sounds better than `character` I guess. 
 
+Generally IDs are used to style elements of a page that will only be needed once, whereas classes are used to style text and such that may be declared multiple times.
 
+Example:
+
+```html
+<div id=”container”>
+Everything within my document is inside this division.
+</div>
+```
+
+I have chosen the id selector for the “container” division over a class, because I only need to use it one time within this file.
+
+Then in my CSS file I have the following:
+
+```css
+#container{ 
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #666;
+  background: #ffffff;
+}
+```
