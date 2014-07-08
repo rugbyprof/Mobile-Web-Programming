@@ -41,13 +41,13 @@
 
 | Element | Description |
 |---------|-------------|
-|**`<p>	` **|	Defines a portion that should be displayed as a paragraph. |
+|**`<p>	`**|	Defines a portion that should be displayed as a paragraph. |
 |**`<hr>`** |		Represents a thematic break between paragraphs of a section or article or any longer content. |
-|**`<pre>` **|		Indicates that its content is preformatted and that this format must be preserved. |
+|**`<pre>`**|		Indicates that its content is preformatted and that this format must be preserved. |
 |`<blockquote>` |		Represents a content that is quoted from another source. |
 |**`<ol>`** |		Defines an ordered list of items. | 
 |**`<ul>`** |		Defines an unordered list of items. |
-|**`<li>` **|		Defines a item of an enumeration list. |
+|**`<li>`**|		Defines a item of an enumeration list. |
 |`<dl>` |		Defines a definition list, that is, a list of terms and their associated definitions. |
 |`<dt>` |		Represents a term defined by the next `<dd>`. |
 |`<dd>` |		Represents the definition of the terms immediately listed before it. |
