@@ -46,7 +46,6 @@ a {
 	position: relative;
 }
 
-http://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/
 
 @media (min-width: 500) {
     a {
@@ -55,3 +54,9 @@ http://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/
 }  
 
 #### Responsive Images
+
+
+#### Links
+
+- http://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/
+- http://dev.w3.org/csswg/css-device-adapt/#the-lsquouser-zoomrsquo-property
