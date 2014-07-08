@@ -189,7 +189,7 @@ Possible values are
 - blink
 
 #### Text Indent
-You can indent the first line of text in an (X)HTML element with the following:
+You can indent the first line of text in an HTML element with the following:
 ```css
   text-indent: value;
 ```
@@ -200,7 +200,7 @@ Possible values are
 - percentage
 
 ### Text Transform
-You can control the size of letters in an (X)HTML element with the following:
+You can control the size of letters in an HTML element with the following:
 
 ```css
   text-transform: value;
@@ -262,7 +262,7 @@ You can set the size of the text used in an element by using the font-size prope
 
 There are a lot of choices for values:
 
-|          |         |           |          |         |          |         |           |          |         |
+| Largest  |         |           |          |         |          |         |           | Smallest | Integer |
 |----------|---------|-----------|----------|---------|----------|---------|-----------|----------|---------|
 | xx-large | x-large | larger    | large    | medium  | small    | smaller | x-small   | xx-small | length  |
 
