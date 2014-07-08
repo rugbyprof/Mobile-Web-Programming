@@ -316,3 +316,169 @@ Possible values are
 - 900
 - bold
 - bolder
+
+-----
+
+#### Anchors, Links and Pseudo Classes
+
+Below are the various ways you can use CSS to style links.
+```css
+a:link {color: #009900;}
+a:visited {color: #999999;}
+a:hover {color: #333333;}
+a:focus {color: #333333;}
+a:active {color: #009900;}
+```
+
+Now lets take a look at what each one of the above link styles actually does.
+
+`a:link {color: #009900;}` The first on the list sets the color of a link when no event is occuring
+
+`a:visited {color: #999999;}` The second sets the color a link changes to, when the user has already visited that url
+
+`a:hover {color: #333333;}` The third sets the color a link changes to as the user places their mouse pointer over the link
+
+`a:focus {color: #333333;}` The fourth is primarilly for the same purpose as the last one, but this one is for users that are not using a mouse and are tabbing through the links via there keyboards tab key, it sets the color a link changes to as the user tabs through the links
+
+`a:active {color: #009900;}` The fifth on the list sets the color a link changes to as it is pressed.
+
+> You must declare the `a:link` and `a:visited` before you declare `a:hover`.<br> Furthermore, you must declare `a:hover` before you can declare `a:active`.
+
+Using the above code will style all links on your web page, unless you declare a seperate set of link styles for a certain area of your webpage.
+
+#### Pseudo Classes
+
+You can set links contained in different parts of your web page to be different colors by using the pseudo class. For example, lets say you want your links in the content area to have a different color then the links in the left or right column of your webpage.
+
+You can do this in the following fashion:
+```css
+#content a:link {color: #009900;}
+#content a:visited {color: #999999;}
+#content a:hover {color: #333333;}
+#content a:focus {color: #333333;}
+#content a:active {color: #009900;}
+```
+
+- Now assuming that you have your main content in a division named “content” all links within that division will now be styled by this new style selector. 
+- Should your selector have a different name, just change the #content selector to match your division name.
+
+Then for the links in a column you could use the following:
+```css
+#column a:link {color: #009900;}
+#column a:visited {color: #999999;}
+#column a:hover {color: #333333;}
+#column a:focus {color: #333333;}
+#column a:active {color: #009900;}
+```
+
+Once again, this assumes the name of the column division, just change the name to match yours.
+
+This same method can be accomplished by declaring a class instead of an id.
+```css
+a.column:link {color: #009900;}
+a.column:visited {color: #999999;}
+a.column:hover {color: #333333;}
+a.column:focus {color: #333333;}
+a.column:active {color: #009900;}
+```
+
+Though in this case you will need to add a class to each link
+```html
+<a class=”column” href=”” title=””>some link text</a>
+```
+But, there is still yet an easier way
+```css
+.column a:link {color: #009900;}
+.column a:visited {color: #999999;}
+.column a:hover {color: #333333;}
+.column a:focus {color: #333333;}
+.column a:active {color: #009900;}
+```
+Then in your HTML:
+```html
+<div class=”column”>
+<a href=”” title=””>some link text</a>
+</div>
+```
+
+-----
+
+#### Backgrounds
+##### Inherited: No
+
+#### Background
+You can style the background of an element in one declaration with the background property.
+
+```css
+background: #ffffff url(path_to_image) top left no-repeat fixed;
+```
+Values:
+- attachment
+- color
+- image
+- position
+- repeat
+
+Or you can set each property individually
+
+
+#### Background Attachment
+
+If you are using an image as a background. You can set whether the background scrolls with the page or is fixed when the user scrolls down the page with the background-attachment property
+```css
+background-attachment: value;
+```
+
+Values:
+- fixed
+- scroll
+
+#### Background Color
+You can specifically declare a color for the background of an element using the background-color property.
+```css
+background-color: value;
+```
+Values:
+- color name
+- hexadecimal number
+- RGB color code
+- transparent
+
+#### Background Image
+You can set an image for the background of an element using the background-image property.
+```css
+background-image: url(path_to_image);
+```
+Values:
+- url
+- none
+
+#### Background Position
+You can position an image used for the background of an element using the background-position property.
+```css
+background-position: value;
+```
+Values:
+- top left
+- top center
+- top right
+- center left
+- center center
+- center right
+- bottom left
+- bottom center
+- bottom right
+- x-% y-%
+- x-pos y-pos
+
+#### Background Repeat
+You can set if an image set as a background of an element is to repeat (across=x   and/or   down=y) the screen using the background-repeat property.
+```css
+background-repeat: value;
+```
+Values:
+- no-repeat
+- repeat
+- repeat-x
+- repeat-y
+
