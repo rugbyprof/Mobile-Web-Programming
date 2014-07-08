@@ -6,7 +6,7 @@ background, borders, text formatting, link effects & so on…) are accomplished 
 There are 3 methods for applying style to your pages:
 
 ### Inline Style
-These kind of defeat the purpose of "cascading style".
+These kind of defeat the purpose of "cascading style" ... well maybe not?
 
 ```html
 <p style=”color: #ff0000;”>Some red text</p>
