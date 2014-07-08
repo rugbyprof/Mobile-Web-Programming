@@ -1,17 +1,3 @@
-### HTML
-
-- `Tag` - Used to tag or "mark-up" pieces of text. Once tagged, the text becomes HTML code to be interpreted by a web browser. Tags look like this:
-- `Element` - A complete tag, having an opening and a closing .
-- `Attribute` - Used to modify the value of the HTML element. Elements will often have multiple attributes.
-
-For now, just understand that a `tag` a piece of code that acts as a label that a web browser interprets, an `element` is a complete `tag` with an opening and closing `tag`, and an `attribute` is a property value that customizes or modifies an HTML element.
-
-Example:
-
-- Element = `<a href="http://wwww.google.com" style="color:blue">Google</a>`
-- `Tag` = `<a>`
-- `Attribute(s)` = `href` & `style`
-
 ### Mobile What?
 
 - Responsive
