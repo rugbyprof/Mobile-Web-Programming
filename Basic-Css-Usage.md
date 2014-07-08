@@ -419,6 +419,8 @@ Values:
 - position
 - repeat
 
+http://jsfiddle.net/DM88s/2/
+
 Or you can set each property individually
 
 
@@ -481,4 +483,6 @@ Values:
 - repeat
 - repeat-x
 - repeat-y
+
+http://jsfiddle.net/DM88s/1/
 
