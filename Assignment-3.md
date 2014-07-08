@@ -5,7 +5,7 @@
 
 #### Dynamic Contact Card
 
-In your `index.php` file, add the code snippet:
+In your `index.php` file, add the following code snippet at the top of your page:
 
 ```php
 <?php
@@ -20,3 +20,5 @@ In your `index.php` file, add the code snippet:
   }
 ?>
 ```
+
+
