@@ -8,12 +8,9 @@ For now, just understand that a `tag` a piece of code that acts as a label that 
 
 Example:
 
-- Element = 
-```html
-<a href="http://wwww.google.com" style="color:blue">Google</a>
-```
+- Element = `<a href="http://wwww.google.com" style="color:blue">Google</a>`
 - `Tag` = `<a>`
-- `Attribute(s) = `href` & `style`
+- `Attribute(s)` = `href` & `style`
 
 ### Mobile What?
 
