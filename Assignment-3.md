@@ -1,6 +1,6 @@
 ### Assignment 3 - First Simple Web Page.
 #### Due: July 11th by 1300 hours.
-
+#### <span style="color:red">Incomplete!</span>
 -----
 
 #### Dynamic Contact Card
