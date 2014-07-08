@@ -546,7 +546,114 @@ Values:
 - Thick
 Or you can set the elements for each borders side individually
 
+-----
 
+#### Lists
+##### Inherited: Yes
+
+#### List Style
+You can control the appearance of ordered and unordered lists in one declaration with the list-style property
+```css
+list-style: value value;
+```
+Values:
+
+- image
+- position
+- type
+Or you can control them individually
+
+
+#### List Style Image
+You can use an image for the bullet of unordered lists with the list-style property
+```css
+list-style-image: url(path_to_image.gif, jpg or png);
+```
+If you use an image, it is a good idea to declare the list-style-type also in case the user has images turned off.
+
+
+#### List Style Position
+You can control the position of ordered and unordered lists with the list-style-position property
+```css
+list-style-position: value;
+```
+Values
+
+- inside
+- outside
+
+#### List Style Type
+You can control the type of bullet ordered and unordered lists use with the list-style-type property
+```css
+list-style-type: value;
+```
+Values
+
+- disc
+- circle
+- square
+- decimal
+- lower-roman
+- upper-roman
+- lower-alpha
+- upper-alpha
+- none
+
+-----
+
+#### Positioning
+##### Inherited: No
+
+#### Position
+The position property (as you may have guessed) changes how elements are positioned on your webpage.
+```css
+position: value;
+```
+Values:
+
+- static
+- relative
+- absolute
+- fixed
+Now, what does all that mean?
+
+#### Static
+Static positioning is by default the way an element will appear in the normal flow of your HTML file. It is not necessary to declare a position of static. Doing so, is no different than not declaring it at all.
+```css
+position: static;
+```
+
+#### Relative
+Positioning an element relatively places the element in the normal flow of your HTML file and then offsets it by some amount using the properties left, right, top and bottom. This may cause the element to overlap other elements that are on the page, which of course may be the effect that is required.
+```css
+position: relative;
+```
+
+#### Absolute
+Positioning an element absolutely, removes the element from the normal flow of your (X)HTML file, and positions it to the top left of its nearest parent element that has a position declared other than static. If no parent element with a position other than static exists then it will be positioned from the top left of the browser window.
+```css
+position: absolute;
+```
+
+```css
+position: absolute; top: 10px; right: 10px;
+```
+
+#### Fixed
+Positioning an element with the fixed value, is the same as absolute except the parent element is always the browser window. It makes no difference if the fixed element is nested inside other positioned elements.
+
+Furthermore, an element that is positioned with a fixed value, will not scroll with the document. It will remain in its position regardless of the scroll position of the page.
+
+At this time IE6 (Internet Explorer 6) does not support the fixed value for the positioning of an element. Thus it will not position fixed elements correctly and will still scroll with the page. To see this effect in action you will need to use a standards compliant browser, such as Firefox 1.0
+```css
+position: fixed;
+```
+When positioning elements with relative, absolute or fixed values the following properties are used to offset the element:
+
+- top
+- left
+- right
+- bottom
 
 
 
