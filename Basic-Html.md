@@ -25,7 +25,7 @@
 
 | Element | Description |
 |---------|-------------|
-|`<body>` |	Represents the content of an HTML document. There is only one <body> element in a document.|
+|`<body>` |	Represents the content of an HTML document. There is only one `<body>` element in a document.|
 |`<section> ` |	This element has been added in HTML5	Defines a section in a document.|
 |`<nav>` |	 This element has been added in HTML5	Defines a section that contains only navigation links.|
 |`<article>` |	 This element has been added in HTML5	Defines self-contained content that could exist independently of the rest of the content.|
@@ -103,14 +103,14 @@
 |`<iframe>` |		Represents a nested browsing context , that is an embedded HTML document. |
 |`<embed> ` |	This element has been added in HTML5	Represents a integration point for an external, often non-HTML, application or interactive content. |
 |`<object>` |		Represents an external resource , which is treated as an image, an HTML sub-document, or an external resource to be processed by a plug-in. |
-|`<param>	` |	Defines parameters for use by plug-ins invoked by <object> elements. |
+|`<param>	` |	Defines parameters for use by plug-ins invoked by `<object>` elements. |
 |`<video> ` |	This element has been added in HTML5	Represents a video , and its associated audio files and captions, with the necessary interface to play it. |
 |`<audio> ` |	This element has been added in HTML5	Represents a sound , or an audio stream . |
-|`<source> ` |	This element has been added in HTML5	Allows authors to specify alternative media resources for media elements like <video> or <audio>. |
-|`<track> ` |	This element has been added in HTML5	Allows authors to specify timed text track for media elements like <video> or <audio>. |
+|`<source> ` |	This element has been added in HTML5	Allows authors to specify alternative media resources for media elements like `<video>` or `<audio>`. |
+|`<track> ` |	This element has been added in HTML5	Allows authors to specify timed text track for media elements like `<video>` or `<audio>`. |
 |`<canvas> ` |	This element has been added in HTML5	Represents a bitmap area that scripts can be used to render graphics, like graphs, game graphics, or any visual images on the fly. |
-|`<map>	` |	In conjunction with <area>, defines an image map . |
-|`<area>` |		In conjunction with <map>, defines an image map . |
+|`<map>	` |	In conjunction with `<area>`, defines an image map . |
+|`<area>` |		In conjunction with `<map>`, defines an image map . |
 |`<svg> ` |	This element has been added in HTML5	Defines an embedded vectorial image . |
 |`<math> ` |	This element has been added in HTML5	Defines a mathematical formula . |
 
@@ -133,14 +133,14 @@
 |---------|-------------|
 |`<form>` |		Represents a form , consisting of controls, that can be submitted to a server for processing. |
 |`<fieldset>` |		Represents a set of controls . |
-|`<legend>` |		Represents the caption for a <fieldset>. |
+|`<legend>` |		Represents the caption for a `<fieldset>`. |
 |`<label>` |		Represents the caption of a form control. |
 |`<input>` |		Represents a typed data field allowing the user to edit the data. |
 |`<button>` |		Represents a button . |
 |`<select>` |		Represents a control allowing selection among a set of options . |
 |`<datalist>` |	 This element has been added in HTML5	Represents a set of predefined options for other controls. |
 |`<optgroup>` |		Represents a set of options , logically grouped. |
-|`<option>` |		Represents an option in a <select> element, or a suggestion of a <datalist> element. |
+|`<option>` |		Represents an option in a `<select>` element, or a suggestion of a `<datalist>` element. |
 |`<textarea>` |		Represents a multiline text edit control . |
 |`<keygen> ` |	This element has been added in HTML5	Represents a key-pair generator control . |
 |`<output>` |	 This element has been added in HTML5	Represents the result of a calculation . |
