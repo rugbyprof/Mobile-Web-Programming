@@ -46,6 +46,8 @@ a {
 	position: relative;
 }
 
+http://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/
+
 @media (min-width: 500) {
     a {
         flex: 0 24%;
