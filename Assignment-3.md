@@ -5,20 +5,14 @@
 
 #### Dynamic Contact Card
 
-In your `index.php` file, add the following code snippet at the top of your page:
+Go look at this gist: https://gist.github.com/rugbyprof/720feb08ee65f0f84cb9
 
-```php
-<?php
-  if(!isset($_POST['submit'])){
-?>
-      <form name="input" action="index.php" method="post">
-      Username: <input type="text" name="user">
-      <input type="submit" name="submit" value="Create">
-      </form>
-<?php
-  exit;
-  }
-?>
-```
+It's an exact copy of [Example1c](http://107.170.231.151/Example1c/) that we viewed in class. 
+
+Your assignment is to simply alter the code from `Example1c`, but incorporate the contact card
+that we used for assignment 1: Joe Sixpack.
+
+![Joe1](http://cloud.systempause.net/WWVs)
 
 
+![Joe2](http://cloud.systempause.net/WWoX)
