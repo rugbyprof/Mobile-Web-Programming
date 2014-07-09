@@ -12,7 +12,7 @@ It's an exact copy of [Example1c](http://107.170.231.151/Example1c/) that we vie
 Your assignment is to simply alter the code from `Example1c`, but incorporate the contact card
 that we used for assignment 1: Joe Sixpack.
 
-![Joe1](http://cloud.systempause.net/WWVs)
+![Joe1](http://f.cl.ly/items/2Q3T2J03402Q2b2W0Z1e/Result1.png)
 
 
-![Joe2](http://cloud.systempause.net/WWoX)
+![Joe2](http://f.cl.ly/items/1n2s0c2K051x3Q0y2f3c/Result2.png)
