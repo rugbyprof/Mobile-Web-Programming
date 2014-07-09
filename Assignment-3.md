@@ -17,10 +17,12 @@ Your assignment is to:
 #### Helpful Graphic:
 
 Initial Page:
+
 ![Joe1](http://f.cl.ly/items/093a3Z3j1r320V0u3o1t/shot1.png)
 
 -----
 
 Modal:
+
 ![Joe2](http://f.cl.ly/items/1g1Z250f0W3v0P2x1736/shot2.png)
 
