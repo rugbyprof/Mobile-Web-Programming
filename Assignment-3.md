@@ -1,6 +1,5 @@
 ### Assignment 3 - First Simple Web Page.
 #### Due: July 11th by 1300 hours.
-#### <span style="color:red">Incomplete!</span>
 -----
 
 ### Dynamic Contact Card
@@ -20,7 +19,7 @@ Use the form from [Example1c](http://107.170.231.151/Example1c/), with necessary
 
 - Create a folder called `ContactForm`
 - Copy your `index.html` from your `/var/www/html` folder into `ContactForm`. If you don't have the correct file, use the faithful wget command and grab it: `wget http://107.170.231.151/index.html`. Run this from your `ContactForm` folder.
-- Make necessary changes to the `index.html` page
+- Make necessary changes to the `index.html` page applying the changes that are indicated below on the graphics.
 
 
 #### Helpful Graphic:
