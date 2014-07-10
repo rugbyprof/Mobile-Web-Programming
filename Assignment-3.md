@@ -14,7 +14,7 @@ It's an exact copy of [Example1c](http://107.170.231.151/Example1c/) that we vie
 
 #### Assignment: 
 
-- Use the form from [Example1c](http://107.170.231.151/Example1c/), with necessary changes, and adapt it to the information on the new contact card we used in Assignment-1
+Use the form from [Example1c](http://107.170.231.151/Example1c/), with necessary changes, and adapt it to the information on the new contact card we used in [Assignment-1](https://github.com/rugbyprof/Mobile-Web-Programming/blob/master/Assignment-1.md)
 - 
 
 
