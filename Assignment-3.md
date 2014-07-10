@@ -20,6 +20,12 @@ Use the form from [Example1c](http://107.170.231.151/Example1c/), with necessary
 - Create a folder called `ContactForm`
 - Copy your `index.html` from your `/var/www/html` folder into `ContactForm`. If you don't have the correct file, use the faithful wget command and grab it: `wget http://107.170.231.151/index.html`. Run this from your `ContactForm` folder.
 - Make necessary changes to the `index.html` page applying the changes that are indicated below on the graphics.
+- Specifically:
+    - Add your photo
+    - Change "Joe Sixpack" to your name
+    - Change skill badges to match your skills.
+    - Add your email address, a link to your github page, and a link to your server
+    - Add a short bio about your self.
 
 
 #### Helpful Graphics:
