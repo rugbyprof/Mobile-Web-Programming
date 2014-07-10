@@ -20,7 +20,7 @@ Use the form from [Example1c](http://107.170.231.151/Example1c/), with necessary
 
 - Create a folder called `ContactForm`
 - Copy your `index.html` from your `/var/www/html` folder. If you don't have the correct file, use the faithful wget command and grab it: `wget http://107.170.231.151/index.html`. Run this from your `ContactForm` folder. 
-- 
+
 
 #### Helpful Graphic:
 
