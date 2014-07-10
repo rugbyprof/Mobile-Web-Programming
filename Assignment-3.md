@@ -22,7 +22,7 @@ Use the form from [Example1c](http://107.170.231.151/Example1c/), with necessary
 - Make necessary changes to the `index.html` page applying the changes that are indicated below on the graphics.
 
 
-#### Helpful Graphic:
+#### Helpful Graphics:
 
 Initial Page:
 
