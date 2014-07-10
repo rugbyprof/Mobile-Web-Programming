@@ -3,16 +3,20 @@
 #### <span style="color:red">Incomplete!</span>
 -----
 
-#### Dynamic Contact Card
+### Dynamic Contact Card
+
+
+#### Starter Code:
 
 Go look at this gist: https://gist.github.com/rugbyprof/720feb08ee65f0f84cb9
 
 It's an exact copy of [Example1c](http://107.170.231.151/Example1c/) that we viewed in class. 
 
-Your assignment is to:
-- Utilize the code from `Example1c`
-- Incorporate the contact card that we used for assignment-1 (Joe Sixpack).
-- Use the form from Example1c, with necessary changes, and adapt it to the information on the new contact card.
+#### Assignment: 
+
+- Use the form from [Example1c](http://107.170.231.151/Example1c/), with necessary changes, and adapt it to the information on the new contact card we used in Assignment-1
+- 
+
 
 #### Helpful Graphic:
 
