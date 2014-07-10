@@ -1,4 +1,4 @@
-### Assignment 3 - First Simple Web Page.
+### Assignment 3 - First ~~Simple~~ Web Page.
 #### Due: July 11th by 1300 hours.
 -----
 
