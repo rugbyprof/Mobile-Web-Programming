@@ -55,7 +55,7 @@ The most straightforward way to load a file is to use a standard `<input type="f
   document.getElementById('files').addEventListener('change', handleFileSelect, false);
 </script>
 ```
-Example: Using form input for selecting. Try it!
+[Example 1](http://msu2u.net/Files-Api/#one)
 
  
 ### Using drag and drop for selecting
@@ -97,11 +97,9 @@ Another technique for loading files is native drag and drop from the desktop to 
 </script>
 ```
 
-Example: Using drag and drop for selecting. Try it!
+[Example 2](http://msu2u.net/Files-Api/#two)
 
-### Drop files here
-
-Note: Some browsers treat `<input type="file">` elements as native drop targets. Try dragging files onto the input field in the previous example.
+> Note: Some browsers treat `<input type="file">` elements as native drop targets. Try dragging files onto the input field in the previous example.
 
 ### Reading files
 
@@ -166,9 +164,7 @@ The example below filters out images from the user's selection, calls `reader.re
 </script>
 ```
 
-Example: Reading files. Try it!
-
-Try this example with a directory of images!
+[Example 3](http://msu2u.net/Files-Api/#three)
 
 
 ### Slicing a file
@@ -243,9 +239,7 @@ The following example demonstrates reading chunks of a file. Something worth not
   }, false);
 </script>
 ```
-Example: Slicing a file. Try it!
-
- Read bytes:  1-5  6-15  7-8 entire file
+[Example 4](http://msu2u.net/Files-Api/#four)
 
 ### Monitoring the progress of a read
 
@@ -346,11 +340,7 @@ The example below demonstrates displaying a progress bar to monitor the status o
 </script>
 ```
 
-Example: Monitoring the progress of a read. Try it!
-
-  Cancel read
-0%
-Tip: To really see this progress indicator in action, try a large file or a resource on a remote drive.
+[Example 5](http://msu2u.net/Files-Api/#five)
 
 ###vReferences
 
