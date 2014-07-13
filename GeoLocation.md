@@ -1,3 +1,3 @@
 ### Geo Location
 
-Coming soon...
+http://www.html5rocks.com/en/tutorials/geolocation/trip_meter/
