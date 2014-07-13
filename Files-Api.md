@@ -342,7 +342,7 @@ The example below demonstrates displaying a progress bar to monitor the status o
 
 [Example 5](http://msu2u.net/Files-Api/#five)
 
-###vReferences
+###References
 
 - [File](http://www.w3.org/TR/file-upload/) API specification
 - [FileReader](http://www.w3.org/TR/file-upload/#dfn-filereader) interface specification
