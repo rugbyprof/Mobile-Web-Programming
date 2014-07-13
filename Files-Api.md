@@ -113,8 +113,7 @@ FileReader includes four options for reading a file, asynchronously:
 - `FileReader.readAsText(Blob|File, opt_encoding)` - The result property will contain the file/blob's data as a text string. By default the string is decoded as 'UTF-8'. Use the optional encoding parameter can specify a different format.
 - `FileReader.readAsDataURL(Blob|File)` - The result property will contain the file/blob's data encoded as a data URL.
 - `FileReader.readAsArrayBuffer(Blob|File)` - The result property will contain the file/blob's data as an ArrayBuffer object.
-- 
-Once one of these read methods is called on your FileReader object, the `onloadstart`, `onprogress`, `onload`, `onabort`, `onerror`, and `onloadend` can be used to track its progress.
+- Once one of these read methods is called on your FileReader object, the `onloadstart`, `onprogress`, `onload`, `onabort`, `onerror`, and `onloadend` can be used to track its progress.
 
 The example below filters out images from the user's selection, calls `reader.readAsDataURL()` on the file, and renders a thumbnail by setting the 'src' attribute to a data URL.
 
