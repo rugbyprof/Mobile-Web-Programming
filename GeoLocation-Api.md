@@ -1,6 +1,6 @@
 ### Geo Location API
 
-[Original Article:](http://www.html5rocks.com/en/tutorials/geolocation/trip_meter/)
+Original Article: http://www.html5rocks.com/en/tutorials/geolocation/trip_meter/
 
 ### Introduction
 
