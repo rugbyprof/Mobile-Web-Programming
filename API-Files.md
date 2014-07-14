@@ -2,7 +2,6 @@
 
 Original Article: http://www.html5rocks.com/en/tutorials/file/dndfiles/
 
-
 ### Introduction
 
 HTML5 finally provides a standard way to interact with local files, via the [File API](http://www.w3.org/TR/file-upload/) specification. As example of its capabilities, the File API could be used to create a thumbnail preview of images as they're being sent to the server, or allow an app to save a file reference while the user is offline. Additionally, you could use client-side logic to verify an upload's mimetype matches its file extension or restrict the size of an upload.
