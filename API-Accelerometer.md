@@ -90,21 +90,24 @@ A mobile phone rotated along the x-axis so the screen is perpendicular to it’s
 | acceleration	|	{0, 0, 0}	|	{0, 5, 0}	|	{0, 0, 2}	|	{3, 0, 0}	|	{5, 5, 0} |
 | accelerationIncludingGravity	|	{0, 9.81, 0}	|	{0, 14.81, 0}	|	{0, 9.81, 2}	|	{3, 9.81, 0}	|	{5, 14.81, 0} |
 
-Using the DeviceOrientation events
+## Using the DeviceOrientation events
 
-1. Check for compatibility
+### 1. Check for compatibility
 
 Check to see if DeviceOrientationEvent supported.
 
+```javascript
 if (window.DeviceOrientationEvent) {
  console.log("DeviceOrientation is supported");
 }
+```
 One thing to note, some devices (for example, the original iPad) say that they support the event when in fact they don’t. In these cases, the event is fired only once, and all of the properties are null.
 
-2. Declare the markup
+### 2. Declare the markup
 
 For this example, we’re going to display the orientation data and then apply that information as a CSS3 transform to an image.
 
+```html
 <div class="main">
   <h2>Device Orientation</h2>
   <table>
@@ -130,7 +133,9 @@ For this example, we’re going to display the orientation data and then apply t
 <div class="container" style="perspective: 300;">
   <img src="html5_logo.png" id="imgLogo" class="logo">
 </div>
-3. Add an event listener
+```
+
+### 3. Add an event listener
 
 Now that we know what events are supported, add the appropriate event listeners:
 
