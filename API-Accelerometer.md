@@ -20,8 +20,9 @@ There are a couple of things that we need to make sure we understand before we c
 
 To answer this question, we need to align our device with the local earth frame. To do that, take your device, and put it on flat, level surface with the top of the device pointing directly north. To do this with a phone, turn around until you are facing north, and place the phone on a flat table, with the bottom of the phone closest to you and the top pointed north. For a laptop, the situation is similar, except the screen is open at a 90° angle, facing you and the keyboard in-line with the surface.
 
-
-Phone is in its normal position, on a flat on a surface, with the screen facing up, the top of the phone pointed directly north and the bottom of the phone is closest to you. The `X`, `Y` and `Z` values increase as you move to the right, forward or up respectively.
+| ![Axes](http://f.cl.ly/items/2P2M3L2l2f1t1B0Z3A16/axes.png) |
+|-------------------------------------------------------------|
+| Phone is in its normal position, on a flat on a surface, with the screen facing up, the top of the phone pointed directly north and the bottom of the phone is closest to you. The `X`, `Y` and `Z` values increase as you move to the right, forward or up respectively. |
 
 ### Device Motion Data
 
@@ -31,8 +32,9 @@ Acceleration data is returned as a coordinate frame with three axes, `x`, `y` an
 - `y-axis` runs front-to-back across the mobile phone screen or the laptop keyboard and is positive towards as it moves away from you. 
 - `z-axis` comes straight up out of the mobile phone screen or the laptop keyboard and is positive as it moves up.
 
-
-#### The phone is rotated on the `Y-Axis` by `gamma` degrees.
+| ![Axes](http://f.cl.ly/items/0t2c1Y2v2k3o342L0T38/rotation.png) |
+|----------------------------------------------------------|
+| The phone is rotated on the `Y-Axis` by `gamma` degrees. |
 
 The rotation data uses Euler angles to represent the difference between the device in it’s normal position and it’s current position. With the HTML5 device orientation events, the data is returned as the number of degrees different from normal. An easier way to think about it is how much the device is tilted `front-to-back`, is referred to as `beta`. How much its tilted `side-to-side`, is known as `gamma`. And finally how much has it been rotated around the `z-axis`, is known as `alpha`.
 
@@ -42,7 +44,7 @@ One thing to keep in mind is that most people don’t use their phones when they
 
 As mentioned earlier, `alpha`, `beta` and `gamma` are determined based on the position the device is with the local earth frame. For most browsers, `alpha` returns the compass heading, so when the device is pointed north, `alpha` is zero. With Mobile Safari, `alpha` is based on the direction the device was pointing when device orientation was first requested. The compass heading is available in the `webkitCompassHeading` parameter.
 
-### The events
+## The events
 
 ### Device orientation
 
@@ -50,27 +52,44 @@ The device orientation event returns only the rotation data, which includes how 
 
 #### Let’s see a couple examples:
 
-- You are looking down at a phone that is lying on a flat, horizontal surface, with north at the top of the frame.
-`{evt.alpha: 0, evt.beta: 0, evt.gamma: 0}` 
-- You are looking down at a phone that is lying on a flat, horizontal surface, with north at the top of the frame. The phone has been rotated by 180° so it is pointing south.
-`{evt.alpha: 180, evt.beta: 0, evt.gamma: 0}`
-- You are looking down at a device that does not have a compass built in, it is pointed west and tilted up by 45° with the left side of the phone higer than the right.
-`{evt.alpha: null, evt.beta: 0, evt.gamma: 45}`
-- You are looking down at a phone that is pointed north and tilted up by 45° with the top of the phone higer than the bottom.
-`{evt.alpha: 0, evt.beta: 45, evt.gamma: 0}`
+| ![](http://f.cl.ly/items/2S1G1w1m1U2s061P3u3U/dm1.png) |
+|:--------------------------------------------:|
+| You are looking down at a phone that is lying on a flat, horizontal surface, with north at the top of the frame. |
+|`{evt.alpha: 0, evt.beta: 0, evt.gamma: 0}` |
+
+| ![](http://f.cl.ly/items/1r2q1A0k0M1a433J1F1i/dm2.png) |
+|:--------------------------------------------:|
+| You are looking down at a phone that is lying on a flat, horizontal surface, with north at the top of the frame. The phone has been rotated by 180° so it is pointing south.|
+| `{evt.alpha: 180, evt.beta: 0, evt.gamma: 0}` |
+
+| ![](http://f.cl.ly/items/0r362Q333o0F1I0I0M1E/dm3.png) |
+|:--------------------------------------------:|
+| You are looking down at a device that does not have a compass built in, it is pointed west and tilted up by 45° with the left side of the phone higer than the right.|
+| `{evt.alpha: null, evt.beta: 0, evt.gamma: 45}` |
+
+| ![](http://f.cl.ly/items/2Z0n1A01342u2j3S3p3W/dm4.png) |
+|:--------------------------------------------:|
+| You are looking down at a phone that is pointed north and tilted up by 45° with the top of the phone higer than the bottom. |
+`{evt.al
 
 ### Device motion
 
-The device motion event is a superset of the device orientation event; it returns data about the rotation information and also acceleration information about the device. The acceleration data is returned in three axes: x, y and z. They are measured in meters per second squared (m/s^2). Because some devices might not have the hardware to exclude the effect of gravity, the event returns two properties, accelerationIncludingGravity and acceleration, which excludes the effects of gravity, (when this is the case, the acceleration data will be null).
+The device motion event is a superset of the device orientation event; it returns data about the rotation information and also [acceleration](http://en.wikipedia.org/wiki/Acceleration) information about the device. The acceleration data is returned in three axes: `x`, `y` and `z`. They are measured in [`meters per second squared (m/s^2)`](http://en.wikipedia.org/wiki/Metre_per_second_per_second). Because some devices might not have the hardware to exclude the effect of gravity, the event returns two properties, `accelerationIncludingGravity` and `acceleration`, which excludes the effects of gravity, (when this is the case, the acceleration data will be null).
 
 A laptop in its normal position, with the screen facing up, the data returned would be:
-Not accelerating	Accelerating up	Accelerating forward	Accelerating right	Accelerating up & to the right
-acceleration	{0, 0, 0}	{0, 0, 5}	{0, 2, 0}	{3, 0, 0}	{5, 0, 5}
-accelerationIncludingGravity	{0, 0, 9.81}	{0, 0, 14.81}	{0, 2, 9.81}	{3, 0, 9.81}	{5, 0, 14.81}
+
+|   | Not accelerating	| Accelerating up	| Accelerating forward	| Accelerating right	| Accelerating up & to the right |
+|---|------------------|-----------------|----------------------|--------------------|--------------------------------|
+| acceleration |	{0, 0, 0} |	{0, 0, 5} | {0, 2, 0} | {3, 0, 0} | {5, 0, 5}
+accelerationIncludingGravity | 0, 0, 9.81} | {0, 0, 14.81} | {0, 2, 9.81} | {3, 0, 9.81} | {5, 0, 14.81}
+
 A mobile phone rotated along the x-axis so the screen is perpendicular to it’s normal position would return:
-Not accelerating	Accelerating up	Accelerating forward	Accelerating right	Accelerating up & to the right
-acceleration	{0, 0, 0}	{0, 5, 0}	{0, 0, 2}	{3, 0, 0}	{5, 5, 0}
-accelerationIncludingGravity	{0, 9.81, 0}	{0, 14.81, 0}	{0, 9.81, 2}	{3, 9.81, 0}	{5, 14.81, 0}
+
+|   | Not accelerating	| Accelerating up	| Accelerating forward	| Accelerating right	| Accelerating up & to the right |
+|---|------------------|-----------------|----------------------|--------------------|--------------------------------|
+| acceleration	|	{0, 0, 0}	|	{0, 5, 0}	|	{0, 0, 2}	|	{3, 0, 0}	|	{5, 5, 0} |
+| accelerationIncludingGravity	|	{0, 9.81, 0}	|	{0, 14.81, 0}	|	{0, 9.81, 2}	|	{3, 9.81, 0}	|	{5, 14.81, 0} |
+
 Using the DeviceOrientation events
 
 1. Check for compatibility
