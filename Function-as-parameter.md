@@ -86,6 +86,7 @@ The code that calls textLoader doesn't know or care that the data is cached, it'
 There are plenty more advanced things you can do by passing around functions, this is just scratching the surface, but hopefully it points you in the right direction :-)
 
 -----
+## Example
 
 Original article: http://tech.deepumohan.com/2013/07/javascript-pass-function-as-parameter.html
 
