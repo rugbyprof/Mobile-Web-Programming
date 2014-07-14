@@ -121,7 +121,6 @@ Number.prototype.toRad = function() {
   return this * Math.PI / 180;
 }
 ```
-
 ### The Final Product
 
 The final result is shown below. Of course, you'll need to go some distance in order to get the distance figure going, so try this out while you're on the move. It's recommended you try this test on a GPS-equipped device (e.g. most modern smartphones) for accuracy.
