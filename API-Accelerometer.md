@@ -135,19 +135,22 @@ For this example, we’re going to display the orientation data and then apply t
 ### 3. Add an event listener
 
 Now that we know what events are supported, add the appropriate event listeners:
-
+```javascript
 if (window.DeviceOrientationEvent) {
   // Listen for the event and handle DeviceOrientationEvent object
   window.addEventListener('deviceorientation', devOrientHandler, false);
 }
-4. Handle the event
+```
+### 4. Handle the event
 
 The HTML5 DeviceOrientation event returns three pieces of data:
 
-alpha the direction the device is facing according to the compass
-beta the angle in degrees the device is tilted front-to-back
-gamma the angle in degrees the device is tilted left-to-right.
+- alpha the direction the device is facing according to the compass
+- beta the angle in degrees the device is tilted front-to-back
+- gamma the angle in degrees the device is tilted left-to-right.
+
 The angles values increase as you tilt the device to the right or towards you.
+```javascript
 if (window.DeviceOrientationEvent) {
   document.getElementById("doEvent").innerHTML = "DeviceOrientation";
   // Listen for the deviceorientation event and handle the raw data
@@ -167,10 +170,11 @@ if (window.DeviceOrientationEvent) {
 } else {
   document.getElementById("doEvent").innerHTML = "Not supported."
 }
-5. Respond to the data
+```
+### 5. Respond to the data
 
 We’ll display it in the table we created in step 2, and also add rotate the image using a CSS3 transform.
-
+```javascript
 document.getElementById("doTiltLR").innerHTML = Math.round(tiltLR);
 document.getElementById("doTiltFB").innerHTML = Math.round(tiltFB);
 document.getElementById("doDirection").innerHTML = Math.round(dir);
@@ -182,37 +186,41 @@ logo.style.webkitTransform =
 logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
 logo.style.transform =
   "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
-The final product
+```
+### The final product
 
+![](http://f.cl.ly/items/152B2D0C0O1d0b1F4101/do.png)
 
-Try it out, and view the source to see it in action.
+[Try it out](http://msu2u.net/Accelerometer/index.html), and view the source to see it in action.
 
-Using the DeviceMotion events
+### Using the DeviceMotion events
 
 The DeviceMotionEvent provides the acceleration and rotation data of the device. In our example, we’re going to use accelerationIncludingGravity to determine the orientation of the device and get a similar result to the sample we built with DeviceOrientation.
 
-1. Check for compatibility
+### 1. Check for compatibility
 
 First thing we want to do is determine if the DeviceMotionEvent is supported using feature detection.
-
+```javascript
 if (window.DeviceMotionEvent) {
   console.log("DeviceMotionEvent supported");
 } 
+```
 Like DeviceOrientationEvent, if a browser cannot provide motion information, the event will be fired once and all properties will be null.
 
-2. Add an event listener
+### 2. Add an event listener
 
 Now that we know that the browser and device supports the DeviceMotionEvent, we can add an event listener.
-
+```javascript
 if ((window.DeviceMotionEvent) {
   window.addEventListener('devicemotion', deviceMotionHandler, false);
 } else {
   document.getElementById("dmEvent").innerHTML = "Not supported."
 }
-3. Declare the markup
+```
+### 3. Declare the markup
 
 For this example, we’re just going to display data that we receive.
-
+```html
 <div class="main">
   <h2>Device Motion</h2>
   <table>
@@ -238,10 +246,11 @@ For this example, we’re just going to display data that we receive.
     </tr>
   </table>
 </div>
-4. Create an event handler
+```
+### 4. Create an event handler
 
 We want to display the raw data that we get back.
-
+```javascript
 function deviceMotionHandler(eventData) {
   var info, xyz = "[X, Y, Z]";
 
@@ -270,27 +279,30 @@ function deviceMotionHandler(eventData) {
   info = eventData.interval;
   document.getElementById("moInterval").innerHTML = info;       
 }
-The final product
+```
+### The final product
 
 When you load the page and move the device around, you should see the values change as the device moves through space and is affected by acceleration.
 
-Try it out, and view the source to see it in action.
+[Try it out](http://msu2u.net/Accelerometer/motion.html), and view the source to see it in action.
 
-Additional resources
+### Additional resources
 
 Here are a few other resources and demos you can check out that use the HTML5 device orientation or device motion events.
 
-Physics
+### Physics
 
-Acceleration
-Acceleration of Gravity
-Acceleration of Gravity on Earth
-Euler Angles
-The Specs
+[Acceleration] (http://en.wikipedia.org/wiki/Acceleration)
+[Acceleration of Gravity] (http://en.wikipedia.org/wiki/Acceleration_of_gravity)
+[Acceleration of Gravity on Earth] (http://en.wikipedia.org/wiki/Acceleration_of_gravity#Earth.27s_gravity)
+[Euler Angles] (http://en.wikipedia.org/wiki/Euler_angles)
 
-W3C Device Orientation Event Specification
-Mozilla DOM Orientation Event
-Mozilla Processing Orientation Events
-Neat Demos
+### The Specs
 
-Pong An experiment to try out device orientation in gaming.
+[W3C Device Orientation Event Specification] (http://dev.w3.org/geo/api/spec-source-orientation)
+[Mozilla DOM Orientation Event] (https://developer.mozilla.org/en/XPCOM_Interface_Reference/nsIDOMOrientationEvent)
+[Mozilla Processing Orientation Events] (https://developer.mozilla.org/en/Detecting_device_orientation#Processing_orientation_events)
+
+### Neat Demos
+
+[Pong](http://petelepage.com/scratch/pong/) An experiment to try out device orientation in gaming.
