@@ -4,7 +4,7 @@ Original Article: http://www.html5rocks.com/en/tutorials/device/orientation/
 
 ### Introduction
 
-Many new computers, mobile phones and other devices are now shipping standard with accelerometers, gyroscopes, compasses and other hardware designed to determine capture motion and orientation data. At the same time, web browsers are providing increasingly more access to that new hardware. One example of that are the new HTML5 DeviceOrientation and DeviceMotion events. These events provide developers with information about the orientation, motion and acceleration of the device.
+Many new computers, mobile phones and other devices are now shipping standard with `accelerometers`, `gyroscopes`, `compasses` and other hardware designed to determine capture motion and orientation data. At the same time, web browsers are providing increasingly more access to that new hardware. One example of that are the new HTML5 DeviceOrientation and DeviceMotion events. These events provide developers with information about the orientation, motion and acceleration of the device.
 
 Today, all modern mobile browsers support device orientation, and most support device motion, with Chrome for Android and Opera being the holdouts. Thankfully they're working on it and we should see it soon. Note, if you need to support older versions of Firefox, it has an implementation using a slightly different event model.
 
@@ -12,48 +12,54 @@ These events have a lot of fun uses, such as using orientation to control the di
 
 In this article, we’ll take a look at the two different events, and use CSS to rotate an image based on the orientation of the device.
 
-Which end is up?
+### Which end is up?
 
 There are a couple of things that we need to make sure we understand before we can start using these events, which end is up and what are the axes we’re going to use?
 
-Device Orientation Data
+### Device Orientation Data
 
 To answer this question, we need to align our device with the local earth frame. To do that, take your device, and put it on flat, level surface with the top of the device pointing directly north. To do this with a phone, turn around until you are facing north, and place the phone on a flat table, with the bottom of the phone closest to you and the top pointed north. For a laptop, the situation is similar, except the screen is open at a 90° angle, facing you and the keyboard in-line with the surface.
 
 
-Phone is in its normal position, on a flat on a surface, with the screen facing up, the top of the phone pointed directly north and the bottom of the phone is closest to you. The X, Y and Z values increase as you move to the right, forward or up respectively.
-Device Motion Data
+Phone is in its normal position, on a flat on a surface, with the screen facing up, the top of the phone pointed directly north and the bottom of the phone is closest to you. The `X`, `Y` and `Z` values increase as you move to the right, forward or up respectively.
 
-Acceleration data is returned as a coordinate frame with three axes, x, y and z. The x-axis runs side-to-side across the mobile phone screen, or the laptop keyboard and is positive towards the right side. The y-axis runs front-to-back across the mobile phone screen or the laptop keyboard and is positive towards as it moves away from you. The z-axis comes straight up out of the mobile phone screen or the laptop keyboard and is positive as it moves up.
+### Device Motion Data
 
+Acceleration data is returned as a coordinate frame with three axes, `x`, `y` and `z`. 
 
-The phone is rotated on the Y-Axis by gamma degrees.
-The rotation data uses Euler angles to represent the difference between the device in it’s normal position and it’s current position. With the HTML5 device orientation events, the data is returned as the number of degrees different from normal. An easier way to think about it is how much the device is tilted front-to-back, is referred to as beta. How much its tilted side-to-side, is known as gamma. And finally how much has it been rotated around the z-axis, is known as alpha.
-
-One thing to keep in mind is that most people don’t use their phones when they’re in this flat position, and instead have rotated them around the x-axis so the screen is facing them, this will affect the acceleration data that is returned from the device motion events.
-
-Differences in Browsers
-
-As mentioned earlier, alpha, beta and gamma are determined based on the position the device is with the local earth frame. For most browsers, alpha returns the compass heading, so when the device is pointed north, alpha is zero. With Mobile Safari, alpha is based on the direction the device was pointing when device orientation was first requested. The compass heading is available in the webkitCompassHeading parameter.
-
-The events
-
-Device orientation
-
-The device orientation event returns only the rotation data, which includes how much the device is leaning front-to-back (beta), side-to-side (gamma) and if the phone or laptop has a compass, the direction the device is facing (alpha).
-
-Let’s see a couple examples:
+- `x-axis` runs side-to-side across the mobile phone screen, or the laptop keyboard and is positive towards the right side. 
+- `y-axis` runs front-to-back across the mobile phone screen or the laptop keyboard and is positive towards as it moves away from you. 
+- `z-axis` comes straight up out of the mobile phone screen or the laptop keyboard and is positive as it moves up.
 
 
-You are looking down at a phone that is lying on a flat, horizontal surface, with north at the top of the frame.
-{evt.alpha: 0, evt.beta: 0, evt.gamma: 0}  
-You are looking down at a phone that is lying on a flat, horizontal surface, with north at the top of the frame. The phone has been rotated by 180° so it is pointing south.
-{evt.alpha: 180, evt.beta: 0, evt.gamma: 0}  
-You are looking down at a device that does not have a compass built in, it is pointed west and tilted up by 45° with the left side of the phone higer than the right.
-{evt.alpha: null, evt.beta: 0, evt.gamma: 45}  
-You are looking down at a phone that is pointed north and tilted up by 45° with the top of the phone higer than the bottom.
-{evt.alpha: 0, evt.beta: 45, evt.gamma: 0}
-Device motion
+#### The phone is rotated on the `Y-Axis` by `gamma` degrees.
+
+The rotation data uses Euler angles to represent the difference between the device in it’s normal position and it’s current position. With the HTML5 device orientation events, the data is returned as the number of degrees different from normal. An easier way to think about it is how much the device is tilted `front-to-back`, is referred to as `beta`. How much its tilted `side-to-side`, is known as `gamma`. And finally how much has it been rotated around the `z-axis`, is known as `alpha`.
+
+One thing to keep in mind is that most people don’t use their phones when they’re in this flat position, and instead have rotated them around the `x-axis` so the screen is facing them, this will affect the acceleration data that is returned from the device motion events.
+
+### Differences in Browsers
+
+As mentioned earlier, `alpha`, `beta` and `gamma` are determined based on the position the device is with the local earth frame. For most browsers, `alpha` returns the compass heading, so when the device is pointed north, `alpha` is zero. With Mobile Safari, `alpha` is based on the direction the device was pointing when device orientation was first requested. The compass heading is available in the `webkitCompassHeading` parameter.
+
+### The events
+
+### Device orientation
+
+The device orientation event returns only the rotation data, which includes how much the device is leaning `front-to-back (beta)`, `side-to-side (gamma)` and if the phone or laptop has a compass, the direction the device is facing (`alpha`).
+
+#### Let’s see a couple examples:
+
+- You are looking down at a phone that is lying on a flat, horizontal surface, with north at the top of the frame.
+`{evt.alpha: 0, evt.beta: 0, evt.gamma: 0}` 
+- You are looking down at a phone that is lying on a flat, horizontal surface, with north at the top of the frame. The phone has been rotated by 180° so it is pointing south.
+`{evt.alpha: 180, evt.beta: 0, evt.gamma: 0}`
+- You are looking down at a device that does not have a compass built in, it is pointed west and tilted up by 45° with the left side of the phone higer than the right.
+`{evt.alpha: null, evt.beta: 0, evt.gamma: 45}`
+- You are looking down at a phone that is pointed north and tilted up by 45° with the top of the phone higer than the bottom.
+`{evt.alpha: 0, evt.beta: 45, evt.gamma: 0}`
+
+### Device motion
 
 The device motion event is a superset of the device orientation event; it returns data about the rotation information and also acceleration information about the device. The acceleration data is returned in three axes: x, y and z. They are measured in meters per second squared (m/s^2). Because some devices might not have the hardware to exclude the effect of gravity, the event returns two properties, accelerationIncludingGravity and acceleration, which excludes the effects of gravity, (when this is the case, the acceleration data will be null).
 
