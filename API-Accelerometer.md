@@ -70,7 +70,6 @@ The device orientation event returns only the rotation data, which includes how 
 | ![](http://f.cl.ly/items/2Z0n1A01342u2j3S3p3W/dm4.png) |
 |:--------------------------------------------:|
 | You are looking down at a phone that is pointed north and tilted up by 45° with the top of the phone higer than the bottom. |
-`{evt.al
 
 ### Device motion
 
@@ -191,7 +190,7 @@ logo.style.transform =
 
 ![](http://f.cl.ly/items/152B2D0C0O1d0b1F4101/do.png)
 
-[Try it out](http://msu2u.net/Accelerometer/index.html), and view the source to see it in action.
+[Try it out](http://msu2u.net/Accelerometer/orientation.html), and view the source to see it in action.
 
 ### Using the DeviceMotion events
 
