@@ -77,3 +77,4 @@ if($_POST){
 	echo '{"success":true}';
 }
 ```
+- Grab my `index.html` file, or just look at it to see how I posted the data to the server. 
