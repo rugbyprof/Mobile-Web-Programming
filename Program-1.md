@@ -2,26 +2,31 @@
 #### Due: July 16th by 1300 hours.
 -----
 
-### Bus Stop Logger
+## Bus Stop Logger
 
 This mobile page will consist of a google map displaying your current location. Later we will
 animate this process, continuously updating the center of the map to correspond with your location,
 but for now simply put your current lat lon in the `textbox` below the map. 
 
-#### Starter Code:
+### Starter Code:
 
 Go look at this gist: https://gist.github.com/rugbyprof/54f43596aee4432fe959 to get a copy of [`geo.js`](https://gist.github.com/rugbyprof/54f43596aee4432fe959 )
 
+You can use `wget http://msu2u.net/GMaps1/index.html` to grab a current copy of the index file we worked on in class. I added a bootstrap theme to make it look better.
 
-#### Assignment:
+### Assignment:
 
-- Copy code from [here](http://msu2u.net/GMaps1/) if you don't have a working version on your own server, and add the `geo.js` file to your folder. 
+- Make sure you have an index file that replicates what we did in class. Grab it using wget from above, or use your own copy, or simply go to the page, and view the source code.  
+- Add the `geo.js` file to your folder. 
+    - Add a script tag to include `geo.js` in your `index.html`
+    - Update `geo.js` so that it writes the devices current Lat/Lon to the textbox below the map.
+- Ensure that a button tap places a marker on the map at your current location
 
-- Add a script tag to include `geo.js` in your `index.html`
-- Update `geo.js` so that it writes the devices current Lat/Lon to the textbox below the map.
+### Make Sure
 
+I should be able to browse to: `111.222.333.444/GMaps1` (replacing 111.222.333.444 with YOUR IP address) and view your project. If your path is different, then I won't grade it. 
 
-### Backend Script
+### Backend Script (extra credit):
 
 In your project folder (GMaps1):
 - Create a file called `backend.php` (`chmod 755`)
