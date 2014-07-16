@@ -1,3 +1,16 @@
+###Notes for bus project
+
+- Need bus stops
+- Find closest bus stop to your location
+- help!!
+- Estimated time of arrival to closest bus stop
+- Bus schedule
+- bus driver profile
+- rate your bus driver
+- count down till next live ping
+- on time or late
+
+
 ### ViewPort
 
 `<meta name="viewport" content="width=960px">`
