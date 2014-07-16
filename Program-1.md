@@ -22,6 +22,7 @@ You can use `wget http://msu2u.net/GMaps1/index.html` to grab a current copy of 
     - Update `geo.js` so that it writes the devices current Lat/Lon to the textbox below the map.
 - Ensure that a button tap places a marker on the map at your current location
 - Don't forget about the "Start" button. It started the logging (remember?), so either replicate the button, or start the logging automatically.
+
 ### Make Sure
 
 I should be able to browse to: `111.222.333.444/GMaps1` (replacing 111.222.333.444 with YOUR IP address) and view your project. If your path is different, then I won't grade it. 
