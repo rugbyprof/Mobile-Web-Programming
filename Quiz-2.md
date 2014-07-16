@@ -17,7 +17,7 @@ There will be a project based, open web, quiz using the concepts learned from th
 ### Motivation
 
 We will continue to develop our mobile bus app, but take a break tonight (Wednesday) and tomorrow (Thursday) 
-to actually study the necessary mobile principles necessary to achieve our goal. Basically, we have a working 
+to actually study the necessary mobile principles needed to achieve our goal. Basically, we have a working 
 template but we want to make sure it includes:
 - fluid design
 - responsive layout
