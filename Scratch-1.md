@@ -69,7 +69,6 @@ a {
 
 #### Responsive Images
 
-
 #### Links
 
 - http://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/
