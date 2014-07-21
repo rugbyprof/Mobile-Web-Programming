@@ -28,6 +28,7 @@ around the site.
 
 ### Actual Quiz Questions
 
+- Name every file exactly as directed!
 - Create a folder on your server called: `Quiz2` in your `/var/www/html` directory.
 - Use wget to pull the example page from http://msu2u.net/Quiz2 to your server.
     - `wget http://msu2u.net/Quiz2/content.html`
@@ -54,11 +55,13 @@ around the site.
        - Change the background color of the page to white, and the text to black when the screen is less than 500 pixels wide.  
 
 4. When completed you should have a folder that contains (alphabetically):
-    - checker.png
-    - content.html
-    - one.html
-    - three.html
-    - two.html
-    - vpdemo.css
+- ![1] Quiz2
+    - ![2] checker.png
+    - ![2] content.html
+    - ![2] one.html
+    - ![2] three.html
+    - ![2] two.html
+    - ![2] vpdemo.css
 
-
+[1]: https://cdn1.iconfinder.com/data/icons/UltimateGnome/22x22/status/folder-drag-accept.png "Folder"
+[2]: http://www.plcs.net/downloads/images/defaut.gif "File"
