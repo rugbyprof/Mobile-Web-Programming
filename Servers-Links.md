@@ -1,6 +1,6 @@
 |First    |Last         |  IP Address             | Username |
 |---------|-------------|-------------------------|----------|
-|James    | Miller      |  http://104.131.135.157 |          |
+|James    | Miller      |  http://104.131.135.157 | James0427 |
 |Michael  | Whitley     |  http://104.131.132.177 | Cptnjack |
 |Sanan    | Aamir       |  http://162.243.158.112 | |
 |Benjamin | Mckinley    |  http://104.131.134.207 | |
@@ -15,4 +15,4 @@
 |Justin   | Satterfield |  http://104.131.133.148 | |
 |Carson   | Bath        |  http://104.131.134.191 | |
 |Charith  | Buddhika    |  http://104.131.133.16  | |
-|James    | Rowe        |  http://104.131.133.190 | |
+|James    | Rowe        |  http://104.131.133.190 | James55 |
