@@ -7,7 +7,10 @@
 - Create a style sheet in `index.html` called `style.css`
 - Copy [this gist](https://gist.github.com/rugbyprof/0092fe67293fac2be65c#file-backend-php) to your server and save it in `backend.php`
 
-> You can always run `wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php -O backend.php` from your `Assignment4` directory. This grabs the raw code from the gist and saves it into `backend.php`
+> You can always run:
+```bash
+wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php -O backend.php` from your `Assignment4` directory. This grabs the raw code from the gist and saves it into `backend.php`
+```
 
 ### Run this sql code
 
