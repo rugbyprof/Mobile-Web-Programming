@@ -20,7 +20,7 @@ This is going to be an app that allows the members of the class to find / locate
 wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php -O backend.php` 
 ```
 
--Use the same method of grabbing `backend.php`
+- Use the same method you used to grab `backend.php` to grab `geo.js` from [this gist](https://gist.githubusercontent.com/rugbyprof/54f43596aee4432fe959/raw/ee7520f660c1c9dc85546ef767d5e8d6f02e543e/geo.js).
 
 -----
 
