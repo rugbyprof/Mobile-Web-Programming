@@ -106,9 +106,13 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 - Here is an example: http://bootsnipp.com/snippets/featured/mix-amp-match-register
 - Change as appropriate so it has the following fields:
 
-|  Field      | field name  |                |
+|  Field      | field name  | type           |
 |-------------|-------------|----------------|
-| First Name  | fname       |                |
-| Last Name   | lname       |                |
-
+| First Name  | fname       | text           |
+| Last Name   | lname       | text           |
+| Tumbnail    | thumb       | file           |
+| Sex         | sex         | radio          |
+| Phone       | phone       | text           |
+| Email       | email       | text           |
+| Password    | pass        | password       |
 
