@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 ### 5 Create Your Form
 
 - Add a form to `signup.html` 
-- Here is an example: http://bootsnipp.com/snippets/featured/mix-amp-match-register
+- Here is an example form: http://bootsnipp.com/snippets/featured/mix-amp-match-register
 - Change as appropriate so it has the following fields:
 
 |  Field      | field name  | type           |
@@ -125,6 +125,10 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 | Email       | Email       | text           |
 | Password    | Pass        | password       |
 
-- This form won't have an action. We will use javascript to submit the form.
+- This form won't have an action, we will use javascript to submit the form.
+- Its submit method will be post: `method=post`
+- We will come back to this later.
+
+### 6 Sending Your Location
 
 
