@@ -18,13 +18,15 @@ wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332
 - Create a new database called `mobile_web`.
 - Create a new user called `mobile`.
 
-> Click ![](http://f.cl.ly/items/01013M0q3I3B2M122W1a/Screen%20Shot%202014-07-24%20at%208.30.11%20PM.png)
-Then Click <br>
-![](http://f.cl.ly/items/0L2B352D401E2Y0d1p1S/add_user_small.png)
+- Click <br>
+> ![](http://f.cl.ly/items/01013M0q3I3B2M122W1a/Screen%20Shot%202014-07-24%20at%208.30.11%20PM.png)
+
+- Then Click <br>
+> ![](http://f.cl.ly/items/0L2B352D401E2Y0d1p1S/add_user_small.png)
 
 > This brings up a form:<br><br> ![](http://f.cl.ly/items/1U060j2r3m04270t3R20/form_small.png)<br>
+Notice the `red arrow`, it's pointing to a checkbox that, when checked, will grant all priveleges to a user that has the same root name as a database. So our user `mobile` will get all priveleges on database `mobile_web`.
 
-- Notice the `red arrow`, it's pointing to a checkbox that, when checked, will grant all priveleges to a user that has the same root name as a database. So our user `mobile` will get all priveleges on database `mobile_web`.
 - Select the `mobile_web` database from the side bar
 - Then click on the `SQL` button:<br>![](http://f.cl.ly/items/1c2o0f0Q362G3N1p1p1D/sql_button_small.png) 
 - Then paste in the following `SQL` code.<br>
