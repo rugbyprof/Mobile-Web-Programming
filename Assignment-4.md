@@ -5,6 +5,8 @@
 - Create a folder in: `/var/www/html/` called `Assignment4`
 - Create a file in `Assignment4` called `index.html`
 - Create a style sheet in `index.html` called `style.css`
+- Create a file in `Assignment4` called `signup.html`
+- Create a file in `Assignment4` called `login.html`
 - Copy [this gist](https://gist.github.com/rugbyprof/0092fe67293fac2be65c#file-backend-php) to your server and save it in `backend.php`
 
 > You can always run the following from your `Assignment4` directory. This grabs the raw code from the gist and saves it straight  into `backend.php`.
@@ -87,4 +89,8 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 ```
 
 ### 3 Create Your Form
+
+- Add a form to your
+- http://bootsnipp.com/snippets/featured/mix-amp-match-register
+- 
 
