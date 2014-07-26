@@ -94,9 +94,21 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 
 -----
 
+### 4 Use a Template (optional)
+
+- Use a template from one of our previous projects, or create your own. 
+- I showed you `divshot` and it wasn't very successful, but http://bootply.com is decent.
+- Or search for "mobile bootstrap templates" to get you going.
+
 ### 4 Create Your Form
 
-- Add a form to your
-- http://bootsnipp.com/snippets/featured/mix-amp-match-register
-- 
+- Add a form to `signup.html` 
+- Here is an example: http://bootsnipp.com/snippets/featured/mix-amp-match-register
+- Change as appropriate so it has the following fields:
+
+|  Field      | field name  |                |
+|-------------|-------------|----------------|
+| First Name  | fname       |                |
+| Last Name   | lname       |                |
+
 
