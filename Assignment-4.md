@@ -1,5 +1,11 @@
 # Still working on this!
 
+# Project: Where In The World Is Tyler Hackbarth?!?
+
+## Overview
+
+This is going to be an app that allows the members of the class to find / locate other members of the class, especially those who skip class. This app will show a set of icons on a google map, where each icon depicts the location of class member. 
+
 ### 1 - Create Workspace
 
 - Create a folder in: `/var/www/html/` called `Assignment4`
@@ -13,6 +19,8 @@
 ```bash
 wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php -O backend.php` 
 ```
+
+-Use the same method of grabbing `backend.php`
 
 -----
 
@@ -108,11 +116,14 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 
 |  Field      | field name  | type           |
 |-------------|-------------|----------------|
-| First Name  | fname       | text           |
-| Last Name   | lname       | text           |
-| Tumbnail    | thumb       | file           |
-| Sex         | sex         | radio          |
-| Phone       | phone       | text           |
-| Email       | email       | text           |
-| Password    | pass        | password       |
+| First Name  | First       | text           |
+| Last Name   | Last        | text           |
+| Tumbnail    | Thumb       | file           |
+| Sex         | Sex         | radio          |
+| Phone       | Phone       | text           |
+| Email       | Email       | text           |
+| Password    | Pass        | password       |
+
+- This form won't have an action. We will use javascript to submit the form.
+
 
