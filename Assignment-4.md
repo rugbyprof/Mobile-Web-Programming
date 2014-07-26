@@ -13,8 +13,9 @@
 ```bash
 wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php -O backend.php` 
 ```
+-----
 
-### 2 Create Your Database & User
+### 2 Create A New Database & A New Database User
 
 - Log into phpmyadmin on your server.
 - Create a new database called `mobile_web`.
@@ -29,6 +30,10 @@ wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332
 - This brings up a form:<br>
 >![](http://f.cl.ly/items/1U060j2r3m04270t3R20/form_small.png)<br>
 Notice the `red arrow`, it's pointing to a checkbox that, when checked, will grant all priveleges to a user that has the same root name as a database. So our user `mobile` will get all priveleges on database `mobile_web`.
+
+-----
+
+### 3 Create & Populate Database Tables 
 
 - Select the `mobile_web` database from the side bar
 - Then click on the `SQL` button:<br>![](http://f.cl.ly/items/1c2o0f0Q362G3N1p1p1D/sql_button_small.png) 
@@ -74,8 +79,6 @@ INSERT INTO `Users` (`Id`, `First`, `Last`, `Thumbnail`, `Lat`, `Lon`, `Sex`, `P
 (19, 'Layla', 'Holmes', 'http://api.randomuser.me/portraits/women/88.jpg', 0.0000000, 0.0000000, 'F', '(844)-930-3814', 'layla.holmes46@example.com', 0, 0, '5f4dcc3b5aa765d61d8327deb882cf99'),
 (20, 'Henry', 'Oliver', 'http://api.randomuser.me/portraits/men/44.jpg', 0.0000000, 0.0000000, 'M', '(556)-611-8198', 'henry.oliver94@example.com', 0, 0, '5f4dcc3b5aa765d61d8327deb882cf99');
 
-
-
 CREATE TABLE IF NOT EXISTS `Users_History` (
   `Id` int(8) NOT NULL,
   `Lat` float(11,7) NOT NULL,
@@ -88,7 +91,9 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
 
-### 3 Create Your Form
+-----
+
+### 4 Create Your Form
 
 - Add a form to your
 - http://bootsnipp.com/snippets/featured/mix-amp-match-register
