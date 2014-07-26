@@ -7,12 +7,26 @@
 - Create a style sheet in `index.html` called `style.css`
 - Copy [this gist](https://gist.github.com/rugbyprof/0092fe67293fac2be65c#file-backend-php) to your server and save it in `backend.php`
 
-> You can always run:
+> You can always run the following from your `Assignment4` directory. This grabs the raw code from the gist and saves it straight  into `backend.php`.
 ```bash
-wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php -O backend.php` from your `Assignment4` directory. This grabs the raw code from the gist and saves it into `backend.php`
+wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php -O backend.php` 
 ```
 
-### Run this sql code
+### 2 Create Your Database & User
+
+- Log into phpmyadmin on your server.
+- Create a new database called `mobile_web`.
+- Create a new user called `mobile`.
+
+> Click ![](http://f.cl.ly/items/01013M0q3I3B2M122W1a/Screen%20Shot%202014-07-24%20at%208.30.11%20PM.png)
+Then Click <br>
+![](http://f.cl.ly/items/0L2B352D401E2Y0d1p1S/add_user_small.png)
+
+> This brings up a form: ![](http://f.cl.ly/items/1U060j2r3m04270t3R20/form_small.png)<br>
+Notice the `red arrow`, it's pointing to a checkbox that, when checked, will grant all priveleges to a user that has the same root name as a database. So our user `mobile` will get all priveleges on database `mobile_web`.
+
+> Select the `mobile_web` database from the side bar, and then click on the `SQL` button:<br>![](http://f.cl.ly/items/1c2o0f0Q362G3N1p1p1D/sql_button_small.png) 
+and paste in the following `SQL` code.
 
 ```sql
 CREATE TABLE IF NOT EXISTS `Users` (
@@ -67,3 +81,6 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
+
+### 3 Create Your Form
+
