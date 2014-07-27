@@ -1,6 +1,4 @@
-# Still working on this!
-
-# Project: Where In The World Is Tyler Hackbarth?!?
+# Project: Where In The World Is Tyler Hackbarth?!? (part 1)
 
 ## Overview
 
