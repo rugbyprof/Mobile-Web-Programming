@@ -27,7 +27,7 @@ wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332
 
 - Log into phpmyadmin on your server.
 - Create a new database called `mobile_web`.
-- Create a new user called `mobile`.
+- Create a new user called `mobile` with a password of `33r9ghijk`.
 
 - Click <br>
 > ![](http://f.cl.ly/items/01013M0q3I3B2M122W1a/Screen%20Shot%202014-07-24%20at%208.30.11%20PM.png)
