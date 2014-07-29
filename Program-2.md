@@ -27,8 +27,7 @@ This is obviously kind of a quiz / program rolled into one. I have not forgotten
 - All files will be on your server AND subsequently in github.
 - Create a folder on your server called: `Program2` in your `/var/www/html` directory.
 - Copy your contact card assignment into a file called `contact.html` and place it into `Program2`
-- 
-- The changes build from one question to the next, so copy `one.html` to `two.html` and so on.
+- Use wget to pull `http://msu2u.net/Devices/camera.html` from my server, so you can obtain the camera code. 
 
 
 4. When completed you should have a folder that contains (alphabetically):
