@@ -1,7 +1,7 @@
 ## Project: Where In The World Is Tyler Hackbarth?!?
 
 ### Part 1: Creating our backend (server side)
-
+#### Due: Monday Aug 4th by 1:00 p.m.
 ### Overview
 
 This is going to be an app that allows the members of the class to find / locate other members of the class, especially those who skip class. This app will show a set of icons on a google map, where each icon depicts the location of class member. 
