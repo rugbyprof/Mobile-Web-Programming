@@ -28,3 +28,6 @@ Adding your signup form to `signup.html`. This form will add a row to the `Users
 
 http://msu2u.net/Assignment4/signup.html
 
+
+[1]: https://cdn1.iconfinder.com/data/icons/UltimateGnome/22x22/status/folder-drag-accept.png "Folder"
+[2]: http://www.plcs.net/downloads/images/defaut.gif "File"
