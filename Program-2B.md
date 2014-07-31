@@ -28,7 +28,7 @@ Adding your signup form to `signup.html`. This form will add a row to the `Users
 ### 2 Add an actual form to your signup page
 
 - Add a form to `signup.html`
-- Take the one from class: `wget http://msu2u.net/Assignment4/signup.html` or get one from bootsnipp:  http://bootsnipp.com/ and edit as you see fit
+- Take the one from class: `wget http://msu2u.net/Assignment4/signup.html` or get one from bootsnipp:  http://bootsnipp.com/ and edit as you see fit.
 - At this stage, make sure you can add a new user to the database. It should insert a row into your `Users` table, if it doesn't then start checking why.
 - Remember, there is no error checking, or handling of passwords. This is the goal of this assignment.
 
