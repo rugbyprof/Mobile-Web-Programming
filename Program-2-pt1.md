@@ -1,5 +1,7 @@
 ## Project: Where In The World Is Tyler Hackbarth?!? (part 1)
 
+### Fixing up the backend
+
 ### Overview
 
 This is going to be an app that allows the members of the class to find / locate other members of the class, especially those who skip class. This app will show a set of icons on a google map, where each icon depicts the location of class member. 
@@ -127,6 +129,6 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 - Its submit method will be post: `method=post`
 - We will come back to this later.
 
-### 6 Sending Your Location
+### 6 Adding registration form
 
-This will be in assignment-5...
+This will be in Program2-Pt2
