@@ -8,14 +8,14 @@ This is going to be an app that allows the members of the class to find / locate
 
 ### 1 - Create Workspace
 
-- Create a folder in: `/var/www/html/` called `Assignment4`
-- Create a file in `Assignment4` called `index.html`
+- Create a folder in: `/var/www/html/` called `Program2A`
+- Create a file in `Program2A` called `index.html`
 - Create a style sheet in `index.html` called `style.css`
-- Create a file in `Assignment4` called `signup.html`
-- Create a file in `Assignment4` called `login.html`
+- Create a file in `Program2A` called `signup.html`
+- Create a file in `Program2A` called `login.html`
 - Copy [this gist](https://gist.github.com/rugbyprof/0092fe67293fac2be65c#file-backend-php) to your server and save it in `backend.php`
 
-> You can always run the following from your `Assignment4` directory. This grabs the raw code from the gist and saves it straight  into `backend.php`.
+> You can always run the following from your `Program2A` directory. This grabs the raw code from the gist and saves it straight  into `backend.php`.
 ```bash
 wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php -O backend.php` 
 ```
