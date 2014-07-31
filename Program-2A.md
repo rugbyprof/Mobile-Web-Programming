@@ -1,6 +1,6 @@
-## Project: Where In The World Is Tyler Hackbarth?!? (part 1)
+## Project: Where In The World Is Tyler Hackbarth?!?
 
-### Fixing up the backend
+### Part 1: Creating our backend (server side)
 
 ### Overview
 
