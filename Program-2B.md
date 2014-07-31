@@ -2,6 +2,9 @@
 
 ### Part 2: Adding a registration form
 #### Due: Monday Aug 4th by 1:00 p.m.
+
+-----
+
 ### Overview
 
 Adding your signup form to `signup.html`. This form will add a row to the `Users` table in our database, which will then subsequently allow the user to login, and be tracked.
