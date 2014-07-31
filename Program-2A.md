@@ -9,19 +9,26 @@ This is going to be an app that allows the members of the class to find / locate
 ### 1 - Create Workspace
 
 - Create a folder in: `/var/www/html/` called `Program2A`
-- Create a file in `Program2A` called `index.html`
-- Create a style sheet in `index.html` called `style.css`
-- Create a file in `Program2A` called `signup.html`
-- Create a file in `Program2A` called `login.html`
-- Copy [this gist](https://gist.github.com/rugbyprof/0092fe67293fac2be65c#file-backend-php) to your server and save it in `backend.php`
+- Change into your `Program2A` folder.
+- Run the following commands:
 
-> You can always run the following from your `Program2A` directory. This grabs the raw code from the gist and saves it straight  into `backend.php`.
 ```bash
-wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php -O backend.php` 
+wget https://gist.githubusercontent.com/rugbyprof/5ee5f9c7b72fe87d571e/raw/905b7ea4d03abc21b8d12bfa69d6aef08a5825d7/index.html
+wget https://gist.githubusercontent.com/rugbyprof/60eb31d32be47f9d6531/raw/0215193c8850750e084bd3989d653dc3bdda2e2b/simple-sidebar.css
+wget https://gist.githubusercontent.com/rugbyprof/0092fe67293fac2be65c/raw/79332abcdb32ca9beac1be09a337d96ebce0aea9/backend.php
+wget https://gist.githubusercontent.com/rugbyprof/54f43596aee4432fe959/raw/18f3c0166ea804569368a75dbb88772eaf25ddaf/geo.js
 ```
 
-- Use the same method you used to grab `backend.php` to grab `geo.js` from [this gist](https://gist.githubusercontent.com/rugbyprof/54f43596aee4432fe959/raw/ee7520f660c1c9dc85546ef767d5e8d6f02e543e/geo.js).
-- This file (obviously) gives us our current location, that will in turn be sent to our server.
+Those commands grab these gists:
+- [index.html](https://gist.github.com/rugbyprof/5ee5f9c7b72fe87d571e)
+- [simple-sidebar.css](https://gist.github.com/rugbyprof/60eb31d32be47f9d6531)
+- [backend.php](https://gist.github.com/rugbyprof/0092fe67293fac2be65c)
+- [geo.js](https://gist.github.com/rugbyprof/54f43596aee4432fe959)
+
+Now create these files in your folder:
+- `signup.html`
+- `login.html`
+
 
 -----
 
