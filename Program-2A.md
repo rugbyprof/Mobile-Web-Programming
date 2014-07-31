@@ -29,6 +29,14 @@ Now create these files in your folder:
 - `signup.html`
 - `login.html`
 
+When completed you should have a folder that contains:
+- ![1] Program2A
+    - ![2] backend.php
+    - ![2] index.html
+    - ![2] geo.js
+    - ![2] login.html
+    - ![2] signup.html
+    - ![2] simple-sidebar.css
 
 -----
 
@@ -110,32 +118,6 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 
 -----
 
-### 4 Use a Template
 
-- Use a template from one of our previous projects, or create your own. 
-- I showed you `divshot` and it wasn't very successful, but http://bootply.com is decent.
-- Or search for "mobile bootstrap templates" to get you going.
-
-### 5 Create Your Form
-
-- Add a form to `signup.html` 
-- Here is an example form: http://bootsnipp.com/snippets/featured/mix-amp-match-register
-- Change as appropriate so it has the following fields:
-
-|  Field      | field name  | type           |
-|-------------|-------------|----------------|
-| First Name  | First       | text           |
-| Last Name   | Last        | text           |
-| Tumbnail    | Thumb       | file           |
-| Sex         | Sex         | radio          |
-| Phone       | Phone       | text           |
-| Email       | Email       | text           |
-| Password    | Pass        | password       |
-
-- This form won't have an action, we will use javascript to submit the form.
-- Its submit method will be post: `method=post`
-- We will come back to this later.
-
-### 6 Adding and configuring the registration form
-
-This will be in Program2 -Part 2
+[1]: https://cdn1.iconfinder.com/data/icons/UltimateGnome/22x22/status/folder-drag-accept.png "Folder"
+[2]: http://www.plcs.net/downloads/images/defaut.gif "File"
