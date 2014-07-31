@@ -129,6 +129,6 @@ CREATE TABLE IF NOT EXISTS `Users_History` (
 - Its submit method will be post: `method=post`
 - We will come back to this later.
 
-### 6 Adding registration form
+### 6 Adding and configuring the registration form
 
-This will be in Program2-Pt2
+This will be in Program2 -Part 2
