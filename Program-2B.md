@@ -234,6 +234,8 @@ What it doesn't have:
     - Password column added to the table (if yours doesn't have it).
     - When you insert the password, use the MD5 function to hash it. 
 
+Here is a partial example using the md5 function:
+
 ```sql
 INSERT INTO SomeTable Values('first','last, MD5('password'));
 ```
