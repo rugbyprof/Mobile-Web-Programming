@@ -237,7 +237,7 @@ What it doesn't have:
 Here is a partial example using the md5 function:
 
 ```sql
-INSERT INTO SomeTable Values('first','last, MD5('password'));
+INSERT INTO SomeTable Values('first','last', MD5('password'));
 ```
 
 See you monday.
