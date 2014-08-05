@@ -25,13 +25,13 @@ Add to `index.html` the ability to log your current location, and send it to a b
 - ![1] Program2C
     - ![2] `-rwxrwxrwx all_users.json` `(* all user locations in here)`
     - ![2] `-rwxr-xr-x backend.php`
-    - ![2] -rwxr-xr-x index.html  `(* new code in here)`
-    - ![2] -rwxr-xr-x geo.js
-    - ![1] drwxrwxrwx images
-    - ![2] -rwxr-xr-x login.html
-    - ![2] -rwxrwxrwx my_users.json `(* users using my instance here)`
-    - ![2] -rwxr-xr-x signup.html
-    - ![2] -rwxr-xr-x simple-sidebar.css
+    - ![2] `-rwxr-xr-x index.html`  `(* new code in here)`
+    - ![2] `-rwxr-xr-x geo.js`
+    - ![1] `drwxrwxrwx images`
+    - ![2] `-rwxr-xr-x login.html`
+    - ![2] `-rwxrwxrwx my_users.json` `(* users using my instance here)`
+    - ![2] `-rwxr-xr-x signup.html`
+    - ![2] `-rwxr-xr-x simple-sidebar.css`
 
 ### 2 : `my_users.json`
 
