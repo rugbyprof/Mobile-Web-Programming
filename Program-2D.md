@@ -53,14 +53,17 @@ Your json file should look like this:
 ```
 
 Creating a json file is not a bunch of string processing, as you may think! Remember from class, we discussed a couple of methods
-of creating json files. The method we will leverage here is a simple php function `json_encode`.
+of creating json files. The method we will leverage here is a simple php function `json_encode` and `json_decode`.
 
 ```php
-$DataArray = array();
+//Grab the current contents of the file in json format, and convert to a php associative array:
+$DataArray = json_decode(file_get_contents("my_users.json"));
 
-
-
+//Add user to "DataArray"
 $DataArray["Users"][] = array($name,$location,$time); 
+
+//Write back contents of array to file in json format:
+file_put_contents("my_users.json",json_encode($DataArray));
 ```
 
 
