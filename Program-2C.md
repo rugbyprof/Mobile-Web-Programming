@@ -106,18 +106,18 @@ We have to appropriate javascript to grab a portion of the video, placing it on 
 event to a button to send that "cropped" portion of the video to the server. Our `backend.php` script needs to code to 
 handle this "file upload" (essentially).
 
-Add this 'case' to your switch statement:
+Add this 'case' to your switch statement (as discussed in class):
 ```php
-		case "image":
-			define('UPLOAD_DIR', 'images/');
-			$img = $_POST['img'];
-			$img = str_replace('data:image/png;base64,', '', $img);
-			$img = str_replace(' ', '+', $img);
-			$data = base64_decode($img);
-			$file = UPLOAD_DIR . $_POST['uid'] . '.png';
-			$success = file_put_contents($file, $data);
-			$Result =  array("Path"=>$file,"FileSize"=>$success,"Image"=>$_POST['img']);
-			break;
+case "image":
+	define('UPLOAD_DIR', 'images/');	
+	$img = $_POST['img'];
+	$img = str_replace('data:image/png;base64,', '', $img);
+	$img = str_replace(' ', '+', $img);
+	$data = base64_decode($img);
+	$file = UPLOAD_DIR . $_POST['uid'] . '.png';
+	$success = file_put_contents($file, $data);
+	$Result =  array("Path"=>$file,"FileSize"=>$success,"Image"=>$_POST['img']);
+	break;
 ```
 
 [1]: https://cdn1.iconfinder.com/data/icons/UltimateGnome/22x22/status/folder-drag-accept.png "Folder"
