@@ -12,9 +12,21 @@ Adding to `signup.html` the ability to take a snapshot using the video camera on
 ### 1 Copy your code
 
 - Copy your code from Program2B to Program2C.
-- Rmemeber the command: `cp -r Program2B Program2C`
+- Rmemeber the command: 
+    - `cp -r Program2B Program2C`
 - Add a sub-folder to your `Program2C` called `images` and make it writeable by apache:
     - `chmod 777 images`
+
+- Your should have the following when done:
+
+- ![1] Program2C
+    - ![2] backend.php
+    - ![2] index.html
+    - ![2] geo.js
+    - ![1] images
+    - ![2] login.html
+    - ![2] signup.html
+    - ![2] simple-sidebar.css
 
 ### 2 Working page:
 
