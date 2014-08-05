@@ -8,7 +8,7 @@
 
 ### Overview
 
-Add to `index.html` the ability to log your current location, and send it to a backend server.
+Add to `index.html` the ability to log your current location, and send it to a backend server. 
 
 ### 1 Copy your code
 
@@ -66,9 +66,21 @@ $DataArray["Users"][] = array($_POST['name'],$_POST['location'],$_POST['time']);
 file_put_contents("my_users.json",json_encode($DataArray));
 ```
 
+### 2 : `all_users.json`
 
+This file will be in the exact same format as `my_users.json`, except there should be MORE users. To update your 
+local copy of `all_users.json` simply run the following command:
 
+```bash
+    wget http://msu2u.net/Location/all_users.json
+```
 
+from your `Program2D` folder. How do you do this?
+
+```php
+    //In your backend.php run this command in the proper case of your switch statement
+    exec("wget http://msu2u.net/Location/all_users.json");
+```
 
 [1]: https://cdn1.iconfinder.com/data/icons/UltimateGnome/22x22/status/folder-drag-accept.png "Folder"
 [2]: http://www.plcs.net/downloads/images/defaut.gif "File"
