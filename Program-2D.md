@@ -94,7 +94,7 @@ or
 
 }
 ```
-This basically depicts an empty object.. This way, when you open the file and decode the json, we create
+This basically depicts an empty object. That way, when you open the file and decode the json, you create
 an empty php array waiting for values to be added.
 
 ### 2 : `all_users.json`
@@ -178,15 +178,16 @@ Here is the original backend with the case to handle the json reading and writin
 			$Result =  array("Path"=>$file,"FileSize"=>$success,"Image"=>$_POST['img']);
 			break;
 		case "update_users":
-		    if($_POST['user_name']){
-                //Grab the current contents of the file in json format, and convert to a php associative array:
-                $DataArray = json_decode(file_get_contents("my_users.json"));
-                //Add user to "DataArray"
-                $DataArray[$_POST['user_name'] = array($_POST['user_location'],time()); 
-                //Write back contents of array to file in json format:
-                file_put_contents("my_users.json",json_encode($DataArray));
-            }
-            exec("wget http://msu2u.net/Location/all_users.json");
+			if($_POST['user_name']){
+                		//Grab the current contents of the file in json format, and convert to a php associative array:
+                		$DataArray = json_decode(file_get_contents("my_users.json"));
+                		//Add user to "DataArray"
+                		$DataArray[$_POST['user_name'] = array($_POST['user_location'],time()); 
+                		//Write back contents of array to file in json format:
+                		file_put_contents("my_users.json",json_encode($DataArray));
+            		}
+        		 exec("wget http://msu2u.net/Location/all_users.json");
+        		 break;
 		default:
 			$Result =  array("Success"=>0,"Message"=>"No action set!");	
 	}
