@@ -182,7 +182,7 @@ Here is the original backend with the case to handle the json reading and writin
 				//Grab the current contents of the file in json format, and convert to a php associative array:
 				$DataArray = json_decode(file_get_contents("my_users.json"));
 				//Add user to "DataArray"
-				$DataArray[$_POST['user_name'] = array($_POST['user_location'],time()); 
+				$DataArray[$_POST['user_name']] = array($_POST['user_location'],time()); 
 				//Write back contents of array to file in json format:
 				file_put_contents("my_users.json",json_encode($DataArray));
 			}
