@@ -36,7 +36,7 @@ Add to `index.html` the ability to log your current location, and send it to a b
 ### 2 : `my_users.json`
 
 This file will contain anyone using your code on your server. When the user loads the page, they will put their name 
-(or nickname, or username, etc.) in a text box above the map. This "name" will be used to label thier location, so
+(or nickname, or username, etc.) in a text box above the map. This "name" will be used as a label for their location, so
 other users may know who they are.
 
 Your json file should look like this:
