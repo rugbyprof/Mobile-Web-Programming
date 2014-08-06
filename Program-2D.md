@@ -22,7 +22,7 @@ Add to `index.html` the ability to log your current location, and send it to a b
 
 - Your should have the following when done:
 
-- ![1] Program2C
+- ![1] Program2D
     - ![2] `-rwxrwxrwx all_users.json` `(* all user locations in here)`
     - ![2] `-rwxr-xr-x backend.php`
     - ![2] `-rwxr-xr-x index.html`  `(* new code in here)`
