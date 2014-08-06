@@ -113,70 +113,14 @@ from your `Program2D` folder. How do you do this in php?
     exec("wget http://msu2u.net/Location/all_users.json");
 ```
 
-### 3 : Add a case to your backend switch statement.
+### 3 : Adding a user to the system.
 
-Here is the original backend with the case to handle the json reading and writing:
+Simply add a case to our switch that handles this. Here is a shortened copy of backend with the case to handle the json reading and writing:
 
 ```php
 	switch($_POST['action']){
+		//Previous cases removed ...
 		
-		//Adding a new user into our most splendid spy program
-		case "insert":
-			fwrite($fp,"inserting\n");
-			if(AddUser($db,$fp)){
-				$Result = array("Success"=>1);
-			}else{
-				$Result = array("Success"=>0,"Message"=>"Add user query failed!");
-			}
-		break;
-		
-		//Switching a user from either logged in or busy to vice versa.
-		case "login":
-			if(LoginUser($db)){
-				$Result = array("Success"=>1);
-			}else{
-				$Result = array("Success"=>0,"Message"=>"Login query failed!");
-			}
-			break;
-		
-		//Make a user busy.
-		case "busy":
-			if(BusyUser($db)){
-				$Result = array("Success"=>1);
-			}else{
-				$Result = array("Success"=>0,"Message"=>"Busy user query failed!");
-			}
-			break;
-					
-		//Remove a user completely from our spy program
-		case "delete":
-			if(DeleteUser($db)){
-				$Result = array("Success"=>1);
-			}else{
-				$Result = array("Success"=>0,"Message"=>"Delete query failed!");
-			}
-			break;
-		
-		//Getting all logged in users (busy or not)
-		case "select":
-			$Result = GetLoggedInUsers($db);
-			if($Result){
-				$Result['Success'] = 1;		//Add success to the result object.
-			}else{
-				$Result = array("Success"=>0,"Message"=>"Get logged in users query failed!");
-			}
-			break;
-		//Adding a snapshot to the images directory from our mobile camera
-		case "image":
-			define('UPLOAD_DIR', 'images/');
-			$img = $_POST['img'];
-			$img = str_replace('data:image/png;base64,', '', $img);
-			$img = str_replace(' ', '+', $img);
-			$data = base64_decode($img);
-			$file = UPLOAD_DIR . $_POST['uid'] . '.png';
-			$success = file_put_contents($file, $data);
-			$Result =  array("Path"=>$file,"FileSize"=>$success,"Image"=>$_POST['img']);
-			break;
 		case "update_users":
 			if($_POST['user_name']){
 				//Grab the current contents of the file in json format, and convert to a php associative array:
@@ -186,7 +130,24 @@ Here is the original backend with the case to handle the json reading and writin
 				//Write back contents of array to file in json format:
 				file_put_contents("my_users.json",json_encode($DataArray));
 			}
+			break;
+		default:
+			$Result =  array("Success"=>0,"Message"=>"No action set!");	
+	}
+```
+
+### 4: Getting and displaying users:
+
+We simply add another case to the switch statement. This switch is essentially an API that the front end is communicating with. It's not a good API, actually it's crappy, but it's a start.
+
+```php
+	switch($_POST['action']){
+		//Previous cases removed ...
+		
+		case "get_users":
 			exec("wget http://msu2u.net/Location/all_users.json");
+			$Json = json_decode(file_get_contents("all_users.json"));
+			$Result = array("Success"=>1,"Json"=>$Json);
 			break;
 		default:
 			$Result =  array("Success"=>0,"Message"=>"No action set!");	
