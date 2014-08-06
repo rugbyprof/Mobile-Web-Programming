@@ -138,7 +138,7 @@ Simply add a case to our switch that handles this. Here is a shortened copy of b
 
 ### 4: Getting and displaying users:
 
-We simply add another case to the switch statement. This switch is essentially an API that the front end is communicating with. It's not a good API, actually it's crappy, but it's a start.
+We simply add another case to the switch statement.
 
 ```php
 	switch($_POST['action']){
@@ -153,6 +153,8 @@ We simply add another case to the switch statement. This switch is essentially a
 			$Result =  array("Success"=>0,"Message"=>"No action set!");	
 	}
 ```
+
+This switch is essentially a barebones API that the front end is communicating with. It's not a good API, actually it's really crappy. It does provideds the necessary functionality for our front to work, though, so we'll use it.
 
 [1]: https://cdn1.iconfinder.com/data/icons/UltimateGnome/22x22/status/folder-drag-accept.png "Folder"
 [2]: http://www.plcs.net/downloads/images/defaut.gif "File"
